@@ -12,6 +12,7 @@ npm 安裝的主要是 linting 用的工具。
 >linting 是啥？就是讓電腦先把咱們寫的跟史一樣的程式碼先改過一遍，避免老師看到太多髒東西！當然，也避免以後別人覺得我們是髒東西……
 
 3. 開一個 branch 然後 checkout 到這個 branch  
+一定要開一個新 branch 寫作業，不要在 master 上面寫作業
 `git checkout -b week1`
 ![branch switch](../img/20200607_01.png)
 
@@ -34,11 +35,16 @@ npm 安裝的主要是 linting 用的工具。
 1. 通過：助教合併 pull request，刪除寫作業分支。
 2. 不通過：重開一個 branch 再寫一遍。
 
-### 同步遠端與本地端程式庫
+### 作業通過後同步遠端與本地端程式庫
 1. 本地端切換回 master 分支，然後將遠端 master 分支 pull 下來。  
 `git checkout master`  
 `git pull origin master`
 2. 刪除本地端作業分支  
 `git branch -d weekX`
 
-不要在 master 分支上工作，開一個新 branch 寫作業
+### 與老師的程式庫同步
+如果課綱內容有變動，需要與老師的程式庫同步
+1. 確認自已回到自已作業程式庫的 master 分支上。
+2. 確認作業都已經寫完，或者已經完成 commit （也就是 `git status` 時顯示不需要 commit）
+3. `git pull https://github.com/Lidemy/mentor-program-4th.git master` 把老師的程式庫 pull 下來
+4. 再運行 `git push origin master` 推到自已遠端的庫裡。
