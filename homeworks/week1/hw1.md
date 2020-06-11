@@ -34,7 +34,7 @@ npm 安裝的主要是 linting 用的工具。
 1. 通過：助教合併 pull request，刪除寫作業分支。
 2. 不通過：重開一個 branch 再寫一遍。
 
-### 同步遠端與本地端程式庫
+### 作業通過後同步遠端與本地端程式庫
 1. 本地端切換回 master 分支，然後將遠端 master 分支 pull 下來。  
 `git checkout master`  
 `git pull origin master`
