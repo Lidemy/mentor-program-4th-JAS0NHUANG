@@ -14,7 +14,7 @@ npm 安裝的主要是 linting 用的工具。
 3. 開一個 branch 然後 checkout 到這個 branch  
 一定要開一個新 branch 寫作業，不要在 master 上面寫作業
 `git checkout -b week1`
-![branch switch](../img/20200607_01.png)
+![branch switch](../img/week1/20200607_01.png)
 
 ### 在自已的程式庫裡寫功課
 1. 打開 ./homeworks/week1/hw1.md 檔案就可以開始寫功課了。
@@ -24,7 +24,7 @@ npm 安裝的主要是 linting 用的工具。
 3. 推上 GitHub  
 `git push origin week1`
 4. 在 GitHub 的程式庫頁面會出現一個 "Your recently pushed branches:" 區塊，點擊 "compare & pull request"。
-![PR](../img/20200607_02.png)
+![PR](../img/week1/20200607_02.png)
 5. 在 Open a pull request 頁面輸入標題、寫上一些心得或問題，就可以按下 "Create pull request"。
 
 ### 到學習系統裡交作業
