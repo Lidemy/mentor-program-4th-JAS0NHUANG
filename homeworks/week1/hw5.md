@@ -4,7 +4,7 @@
 附上一張網路基本架構圖：
 ![Basic Web Structure](../img/week1/Basic_Web_Structure.png)
 
-## 假設我今天去 Google 首頁搜尋框打上：JavaScri[t 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
+## 假設我今天去 Google 首頁搜尋框打上：JavaScript 並且按下 Enter，請說出從這一刻開始到我看到搜尋結果為止發生在背後的事情。
 1. 在按下 Enter 的時候，Google 網頁會觸發按下 Enter 鍵的前端程式碼
 2. 瀏覽器會通知網路卡，網路卡會去 DNS 伺服器要求查詢 ip 位址
 2. 連上 Google 伺服器後，前端程式碼對 Google 伺服器（後端）發出一個請求（request），要求查找資料庫裡面有關 JavaScript 這個字串的資料
