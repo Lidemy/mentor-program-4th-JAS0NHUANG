@@ -19,7 +19,7 @@ npm 安裝的主要是 linting 用的工具。
 ### 在自已的程式庫裡寫功課
 1. 打開 ./homeworks/week1/hw1.md 檔案就可以開始寫功課了。
 2. 功課寫完，`:wq` 之後  
-`git add week1/hw1.md`  
+`git add .`  
 `git commit -m "寫完第一週功課"`
 3. 推上 GitHub  
 `git push origin week1`
