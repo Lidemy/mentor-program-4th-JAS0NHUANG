@@ -12,8 +12,8 @@ npm 安裝的主要是 linting 用的工具。
 >linting 是啥？就是讓電腦先把咱們寫的跟史一樣的程式碼先改過一遍，避免老師看到太多髒東西！當然，也避免以後別人覺得我們是髒東西……
 
 3. 開一個 branch 然後 checkout 到這個 branch  
+`git checkout -b week1`  
 一定要開一個新 branch 寫作業，不要在 master 上面寫作業
-`git checkout -b week1`
 ![branch switch](../img/week1/20200607_01.png)
 
 ### 在自已的程式庫裡寫功課
