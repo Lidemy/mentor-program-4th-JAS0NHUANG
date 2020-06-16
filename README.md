@@ -8,17 +8,17 @@
 
 ### 第三週（06/29 ~ 07/05）：程式基礎（下）
 
-在程式基礎的部分一週是絕對不夠的，因此本週會繼續加強程式基礎。在這一週裡面我們會延伸上一週的內容，並且多講一些有關於 ES6 的語法。
+繼續加強程式基礎。多講一些有關於 ES6 的語法。
 
-本週的作業有自動批改系統，請傳到 [Lidemy OJ](https://oj.lidemy.com/) 上，並且確認每一題都有答對之後再交作業，否則我會直接退件，
+請傳到 [Lidemy OJ](https://oj.lidemy.com/) 上，並且確認每一題都有答對之後再交作業，否則我會直接退件，
 
-最後，在這週也會講到 eslint，我已經幫大家設置好了 eslint，這是一個能夠幫你自動做語法檢查的工具，在每次 commit 之前都會自動檢查程式碼的規範，不符合規範的話不會讓你 commit。
+ eslint，我已經幫大家設置好了 eslint，這是一個能夠幫你自動做語法檢查的工具，在每次 commit 之前都會自動檢查程式碼的規範，不符合規範的話不會讓你 commit。
 
 #### 指定教材
 
-[ALG101] 先別急著寫 leetcode，一直看到「單元六：內建函式做做看」，並且跟著裡面一起練習。
+[ALG101] 先別急著寫 leetcode「單元六：內建函式做做看」。
 
-[JS102] 升級你的 JavaScript 技能：ES6 + npm + Jest 這堂課，主要目的是熟悉 npm 以及 ES6 的語法，因為以後會很常用到這兩個東西。至於 Jest 的部分跟測試有關，這方面之後會再提到，現在只要稍微知道就好，還不需要深入研究。
+[JS102] 升級你的 JavaScript 技能：ES6 + npm + Jest 這堂課。
 
 最後呢，若是還有時間，可以繼續把 ALG101 以及 [JS101] 用 JavaScript 一步步打造程式基礎也看完，但之前剩下的綜合練習 Lv2 以及 Lv3 其實大部分題目都與 ALG101 雷同，寫過的就可以直接跳過了，但還是建議可以看一下參考解答影片。
 
@@ -35,19 +35,17 @@
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
 
-無論是前端還是後端，身為一個網頁工程師，必須很清楚整個網路運作的輪廓。細節可以日後再研究，但一定要能掌握大方向以及重要概念，否則未來的路絕對會走得很崎嶇。
-
-在這週裡面我們會學到兩台電腦在網路上該怎麼溝通，從上層往下，再從底層往上，一步步建立起你對網路的世界觀。
+身為一個網頁工程師，必須很清楚整個網路運作的輪廓。
 
 當然，只有理解是不夠的，我們也會用 Node.js 串接基本的 API，帶你熟練與網路相關的知識。
 
 #### 指定教材
 
-這週可以直接看 [NET101] 網路基礎概論（搭配 JS 實作練習）的全部課程，去熟悉網路相關的概念，並且學習如何利用 Node.js 去串接 API。
+[NET101] 網路基礎概論（搭配 JS 實作練習）的全部課程，去熟悉網路相關的概念，並且學習如何利用 Node.js 去串接 API。
 
-再來可以看這篇文章，重新省視一次自己對 API 的理解：[從拉麵店的販賣機理解什麼是 API](https://medium.com/@hulitw/ramen-and-api-6238437dc544)，然後看這篇文字版的傳紙條故事複習一下網路概念：[從傳紙條輕鬆學習基本網路概念](https://medium.com/@hulitw/learning-tcp-ip-http-via-sending-letter-5d3299203660)
+[從拉麵店的販賣機理解什麼是 API](https://medium.com/@hulitw/ramen-and-api-6238437dc544)，然後看這篇文字版的傳紙條故事複習一下網路概念：[從傳紙條輕鬆學習基本網路概念](https://medium.com/@hulitw/learning-tcp-ip-http-via-sending-letter-5d3299203660)
 
-額外補充一個影片，英文 ok 的話可以看：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
+[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
 [HW4 作業連結](/homeworks/week4)
 
