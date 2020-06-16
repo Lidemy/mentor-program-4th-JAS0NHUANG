@@ -48,5 +48,12 @@ isValid([3, 5, 8, 13, 22, 35])
     - 第六行以後的程式都不會再被執行，函式結束
 ##### 6. 程式執行完成
 
-整個程式會先判斷引入的數列中所有的數字是否為正數，然後再檢查從第 3 個數字起（index 2）的數字，是否為前兩個數字的合，也就是有費氏數列的特性（但是不一定是費氏數列？）。
-例如：[0, 1, 1, 2] 為費氏數列，[0, 2, 2, 4, 6, 10] 則不是費氏數列。（這裡我不太確定費氏數列的定義是不是一定要從 0, 1 開始的才算）
+整個程式會先判斷引入的數列中所有的數字是否為正數，然後再檢查從第 3 個數字起（index 2）的數字，是否為前兩個數字的合，也就是有費氏數列的特性（但是不一定是費氏數列？）。  
+例如：[0, 1, 1, 2] 為費氏數列，[0, 2, 2, 4, 6, 10] 則不是費氏數列。（這裡我不太確定費氏數列的定義是不是一定要從 0, 1 開始的才算）  
+
+參考資料：  
+[Connecting Fibonacci and geometric sequences](https://www.johndcook.com/blog/2009/05/11/fibonacci-geometric-series/)   
+他的文章裡有提到 **generalized Fibonacci sequence** 「廣義的費氏數列」，所以非 0 或 1 起始的就是廣義的費氏數列？  
+
+[Math is Fun - Fibonacci Sequence](https://www.mathsisfun.com/numbers/fibonacci-sequence.html)  
+還可以有負的？  

@@ -1,4 +1,4 @@
-// Can't use the "reverse" method
+// 不能用 reverse 函式
 function reverse (str) {
   let reversedStr = ''
   for (let i = str.length - 1; i >= 0; i--) {
