@@ -1,3 +1,4 @@
+#!/bin/bash
 # 以 curl 連接 api 取得使用者資料並傳入 userData 變數中
 userData=$(curl --silent -X GET "https://api.github.com/users/$1")
 
