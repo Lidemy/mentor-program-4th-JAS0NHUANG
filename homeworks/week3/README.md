@@ -9,6 +9,7 @@
 ## hw2：水仙花數
 
 [LIOJ1025 - 水仙花數](https://oj.lidemy.com/problem/1025)
+ALG101 project 4 
 
 ## hw3：判斷質數
 
@@ -17,10 +18,12 @@
 ## hw4：判斷迴文
 
 [LIOJ1030 - 判斷迴文](https://oj.lidemy.com/problem/1030)
+ALG101 project 5
 
 ## hw5：聯誼順序比大小
 
 [LIOJ1004 - 聯誼順序比大小](https://oj.lidemy.com/problem/1004)
+
 
 ## hw6：簡答題
 請將答案寫在 [hw6.md](hw6.md)。
