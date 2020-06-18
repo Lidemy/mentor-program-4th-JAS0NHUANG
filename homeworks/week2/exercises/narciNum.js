@@ -1,3 +1,4 @@
+// 水仙花數
 function checkNarciNum (n, m) {
   for (let i = n; i <= m; i++) {
     const sum = getDigitSum(i)
@@ -18,6 +19,7 @@ function checkNarciNum (n, m) {
 
 checkNarciNum(5, 10000000)
 
+// LIOJ 上的寫法
 function solve (lines) {
   const linesArr = lines[0].split(' ')
   const n = Number(linesArr[0])

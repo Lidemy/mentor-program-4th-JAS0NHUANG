@@ -1,3 +1,5 @@
+// 研究老師的寫法
+
 function mazerunner (map) {
   // 設定高與寬
   const h = 10

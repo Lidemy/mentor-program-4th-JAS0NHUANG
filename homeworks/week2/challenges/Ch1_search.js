@@ -23,7 +23,7 @@ function search (arr, n) {
 
 console.log(search([1, 3, 10, 14, 39], 14))
 console.log(search([1, 3, 10, 14, 39], 299))
-console.log('其它測試……')
+console.log('其它測試')
 console.log(search([1, 2, 3], 2))
 console.log(search([1, 2, 3, 4, 5, 6, 7, 8], 9))
 console.log(search([1, 2, 3, 4, 5, 6, 7, 8], 8))

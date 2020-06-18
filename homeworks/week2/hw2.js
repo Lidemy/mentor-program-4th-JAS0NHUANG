@@ -18,7 +18,8 @@ function capitalizeAdv (str) {
 // 改寫為 ES6 arrow function
 const capitalizeArrow = (str) => str.replace(/^./, str[0].toUpperCase())
 
-console.log(capitalize('nick'))
-console.log(capitalizeAdv('Nick'))
-console.log(capitalizeArrow(',hello'))
-console.log(capitalizeArrow('just another test!'))
+module.exports = {
+  capitalize: capitalize,
+  capitalizeAdv: capitalizeAdv,
+  capitalizeArrow: capitalizeArrow
+}

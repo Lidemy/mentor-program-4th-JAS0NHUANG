@@ -18,15 +18,8 @@ function repeat (str, times) {
   return returnStr
 }
 
-// join 測試
-console.log(join(['a'], '!'))
-console.log(join([1, 2, 3], ''))
-console.log(join(['a', 'b', 'c'], '!'))
-console.log(join(['a', 1, 'b', 2, 'c', 3], ','))
-console.log(join(['aaa', 'bb', 'c', 'dddd'], ',,'))
-console.log(join([], '!!'))
-
-// repeat 測試
-console.log(repeat('a', 5))
-console.log(repeat('yoyo', 2))
-console.log(repeat('', 100))
+module.exports = {
+  join: join,
+  repeat: repeat
+}
+// 測資放在 week2.test.js
