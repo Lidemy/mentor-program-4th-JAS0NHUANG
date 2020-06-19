@@ -10,7 +10,7 @@ function search (arr, n) {
     if (n === arr[M]) return M
     if (n < arr[M]) {
       R = M
-      M = Math.floor(M / 2)
+      M = Math.floor((M + L) / 2)
     } else {
       L = M
       M = M + Math.floor((R - M) / 2)
