@@ -4,9 +4,6 @@
 
 - 每天看一點：繼續把 ALG101 以及 [JS101] 用 JavaScript 一步步打造程式基礎也看完。JS101 綜合練習 Lv2 以及 Lv3 其實大部分題目都與 ALG101 雷同，建議可以看一下參考解答影片。
 
-[HW3 作業連結](/homeworks/week3)
-剩 hw6 還沒寫完
-
 ### 第四週（07/06 ~ 07/12）：網路基礎
 
 #### 指定教材
@@ -30,13 +27,6 @@
 3. JavaScript 基本語法及程式思維
 4. 網路基本概念
 
-#### HTTP Game
-
-為了檢驗你對於 API 串接是否理解，我特地做了一個很有趣的小遊戲：[Lidemy HTTP Challenge](https://lidemy-http-challenge.herokuapp.com/start)。
-
-建議使用之前教過的 node.js 搭配 [request](https://github.com/request/request) 這個 library 來解題，才能比較有效確認自己是否前面都有學進去。
-
-我有藏了一些很無聊的梗在裡面，解題的時候可以順便找找。如果卡關的話可以看提示，解完以後可以寫個心得。如果真的卡某一關卡很久，直接搜尋「Lidemy HTTP Challenge」可以找到相關資料。
 
 [HW5 作業連結](/homeworks/week5)
 
