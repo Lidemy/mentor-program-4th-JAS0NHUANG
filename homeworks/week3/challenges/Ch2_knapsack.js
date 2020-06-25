@@ -26,7 +26,9 @@ function solve (lines) {
   // 建立一個陣列將每個重量的值都預設為 0
   const weightValue = []
   for (let i = 0; i <= maxWeight; i++) {
-    weightValue.push(0)
+    // weightValue.push(0)
+    // 改成 weightValue[i] 語意會比較清楚
+    weightValue[i] = 0
   }
   // console.log(weightValue)
 

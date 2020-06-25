@@ -24,3 +24,11 @@ function solve (lines) {
     console.log(starsStr)
   }
 }
+
+// 用內建函式 repeat 解：
+// function solve(lines) {
+//   let n = Number(lines[0])
+//   for (let i = 0; i <= n; i++) {
+//     console.log('*'.repeat(i))
+//   }
+// }

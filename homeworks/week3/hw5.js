@@ -16,26 +16,49 @@ rl.on('close', function () {
 
 function solve (lines) {
   for (let i = 1; i < lines.length; i++) {
-    // 數字最大會到 512 位數
-    // 試試看不用 BigInt （1. 檢查位數多的大 2. 位數一樣的話，一位一位比大小，有時間可以寫寫看）
-    const lineArray = lines[i].split(' ').map(BigInt)
-    if (lineArray[0] === lineArray[1]) {
-      console.log('DRAW')
-    } else if (lineArray[2] > 0) {
-      if (lineArray[0] > lineArray[1]) {
-        console.log('A')
-      } else {
-        console.log('B')
-      }
-    } else {
-      if (lineArray[0] < lineArray[1]) {
-        console.log('A')
-      } else {
-        console.log('B')
-      }
-    }
+    const [a, b, p] = lines[i].split(' ')
+    console.log(checkAB(a, b, p))
   }
 }
+
+function checkAB (a, b, p) {
+  if (a === b) return 'DRAW'
+  // 如果 p 是 -1，將 a b 對調
+  if (Number(p) === -1) {
+    const holder = a
+    a = b
+    b = holder
+  }
+
+  if (a.length !== b.length) {
+    return a.length > b.length ? 'A' : 'B'
+  } else {
+    return a > b ? 'A' : 'B'
+  }
+}
+
+// function solve (lines) {
+//   for (let i = 1; i < lines.length; i++) {
+//     // 數字最大會到 512 位數
+//     // 試試看不用 BigInt （1. 檢查位數多的大 2. 位數一樣的話，一位一位比大小，有時間可以寫寫看）
+//     const lineArray = lines[i].split(' ').map(BigInt)
+//     if (lineArray[0] === lineArray[1]) {
+//       console.log('DRAW')
+//     } else if (lineArray[2] > 0) {
+//       if (lineArray[0] > lineArray[1]) {
+//         console.log('A')
+//       } else {
+//         console.log('B')
+//       }
+//     } else {
+//       if (lineArray[0] < lineArray[1]) {
+//         console.log('A')
+//       } else {
+//         console.log('B')
+//       }
+//     }
+//   }
+// }
 
 // 不用 BigInt 的解法：
 // const readline = require('readline')
