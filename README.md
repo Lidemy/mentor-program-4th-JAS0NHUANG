@@ -55,10 +55,8 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 #### 自我檢測
 
-- [ ] P1 你知道 HTML 是在做什麼的
 - [ ] P1 你知道如何使用有語意的（semantic）標籤
 - [ ] P1 你知道基本 SEO 的概念
-- [ ] P1 你知道 CSS 是什麼
 - [ ] P1 你知道 inline、block 跟 inline-block 的區別
 - [ ] P1 你知道什麼是 box model
 - [ ] P1 你知道 position 的所有屬性及其差別
