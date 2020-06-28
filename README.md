@@ -2,18 +2,11 @@
 
 #### 原來的 README 檔太多課程介紹的部分，為了要看每週的進度都要捲到下面去找，所以自已開了一個分支，刪掉不那麼需要的資訊，讓進度比較容易找到。
 
-- 每天看一點：繼續把 ALG101 以及 [JS101] 用 JavaScript 一步步打造程式基礎也看完。JS101 綜合練習 Lv2 以及 Lv3 其實大部分題目都與 ALG101 雷同，建議可以看一下參考解答影片。
-
-[HW3 作業連結](/homeworks/week3)
-剩 hw6 還沒寫完
+- [JS101] 用 JavaScript 一步步打造程式基礎也看完。JS101 綜合練習 Lv2 以及 Lv3 其實大部分題目都與 ALG101 雷同，建議可以看一下參考解答影片。
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
 
 #### 指定教材
-
-[NET101] 網路基礎概論（搭配 JS 實作練習）的全部課程，去熟悉網路相關的概念，並且學習如何利用 Node.js 去串接 API。
-
-[從拉麵店的販賣機理解什麼是 API](https://medium.com/@hulitw/ramen-and-api-6238437dc544)，然後看這篇文字版的傳紙條故事複習一下網路概念：[從傳紙條輕鬆學習基本網路概念](https://medium.com/@hulitw/learning-tcp-ip-http-via-sending-letter-5d3299203660)
 
 [CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
@@ -21,46 +14,19 @@
 
 #### 自我檢測
 
-- [ ] P1 你知道網路背後大概的運作模式
-- [ ] P1 你知道什麼是 Request 跟 Response
-- [ ] P1 你知道什麼是 DNS 以及運作原理
-- [ ] P1 你知道 HTTP 與 HTTPS 的差異
-- [ ] P1 你知道 localhost 跟 127.0.0.1 是什麼
-- [ ] P1 你知道 GET 與 POST 的差別
+
 - [ ] P1 你知道常用的 HTTP Header
-- [ ] P1 你知道什麼是 API
-- [ ] P1 你會使用 node.js 寫出串接 API 的程式
-- [ ] P1 你知道 HTTP method 有哪些
 - [ ] P1 你知道基本的 HTTP statud code，像是 200、301、400、404、500
 
 ### 第五週（07/13 ~ 07/19）：複習週
 
-經過前面四週的各種摧殘，終於迎來了第一次的複習週！
-
-複習週顧名思義，就讓大家複習前面這四週的進度用的，這四週我們一共學了四項主要的技能：
+這四週我們一共學了四項主要的技能：
 
 1. Command line 的使用
 2. Git 的基本操作
 3. JavaScript 基本語法及程式思維
 4. 網路基本概念
 
-如果你之前因為趕時間而亂寫作業，現在是回去重新省視一遍的好時機；或者是之前有查到什麼有趣的延伸資料但沒時間看的，這一週你就有時間看了。
-
-在複習週是沒有任何進度的，但是會有兩個小挑戰，讓你們檢驗前面學到的技能。
-
-#### HTTP Game
-
-為了檢驗你對於 API 串接是否理解，我特地做了一個很有趣的小遊戲：[Lidemy HTTP Challenge](https://lidemy-http-challenge.herokuapp.com/start)。
-
-建議使用之前教過的 node.js 搭配 [request](https://github.com/request/request) 這個 library 來解題，才能比較有效確認自己是否前面都有學進去。
-
-我有藏了一些很無聊的梗在裡面，解題的時候可以順便找找。如果卡關的話可以看提示，解完以後可以寫個心得。如果真的卡某一關卡很久，直接搜尋「Lidemy HTTP Challenge」可以找到相關資料。
-
-#### NPSC 題目練習
-
-NPSC 中文全名為[網際網路程式設計全國大賽](https://contest.cc.ntu.edu.tw/npsc2018/)，是台大每年都會辦給國中生跟高中生參加的比賽。
-
-裡面很多題目都很有趣，適合拿來給程式初學者練習，之前在 ALG101 的第七單元其實就有提到過，還沒看完的可以順便看一下。因為 NPSC 的題目沒有辦法對外授權，所以我自己出了一堆類似的題目，大家可以上 [LIOJ](https://oj.lidemy.com/) 把其他沒有寫過的題目寫一寫，訓練一下程式基礎。
 
 [HW5 作業連結](/homeworks/week5)
 
@@ -89,10 +55,8 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 #### 自我檢測
 
-- [ ] P1 你知道 HTML 是在做什麼的
 - [ ] P1 你知道如何使用有語意的（semantic）標籤
 - [ ] P1 你知道基本 SEO 的概念
-- [ ] P1 你知道 CSS 是什麼
 - [ ] P1 你知道 inline、block 跟 inline-block 的區別
 - [ ] P1 你知道什麼是 box model
 - [ ] P1 你知道 position 的所有屬性及其差別
