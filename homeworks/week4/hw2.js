@@ -3,12 +3,9 @@ const axios = require('axios')
 
 const apiURL = 'https://lidemy-book-store.herokuapp.com'
 const action = process.argv[2]
-// requestData => param
 const param = process.argv[3]
 const bookName = process.argv[4]
 
-// 本來是用 if (action === XXX)
-// 看過範例後真的是用 switch 比較好
 switch (action) {
   case 'list':
     listBooks()
@@ -29,7 +26,7 @@ switch (action) {
     console.log('可用功能：list、read、delete、create 與 update')
 }
 
-function listBooks () {
+function listBooks() {
   axios.get(`${apiURL}/books?_limit=20`)
     .then(res => {
       for (const i in res.data) {
@@ -50,7 +47,7 @@ function readBook (param) {
     })
 }
 
-function deleteBook (param) {
+function deleteBook(param) {
   axios.delete(`${apiURL}/books/${param}`)
     .then(res => {
       console.log(`已刪除 ID 為 ${param} 的書輯。`)
@@ -60,7 +57,7 @@ function deleteBook (param) {
     })
 }
 
-function createBook (param) {
+function createBook(param) {
   if (param !== undefined) {
     axios.post(`${apiURL}/books`, {
       name: param
@@ -76,7 +73,7 @@ function createBook (param) {
   }
 }
 
-function updateBook (param, bookName) {
+function updateBook(param, bookName) {
   axios.patch(`${apiURL}/books/${param}`, {
     name: bookName
   }

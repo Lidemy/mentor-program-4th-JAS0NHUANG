@@ -1,6 +1,5 @@
 const apiURL = 'https://restcountries.eu/rest/v2'
 
-// axios 寫法
 const axios = require('axios')
 
 axios
@@ -27,12 +26,9 @@ axios
     return err
   })
 
-// request 寫法
 const request = require('request')
 
 request.get(`${apiURL}/name/${process.argv[2]}`, (error, response, body) => {
-  // 看範例才想到要加這個判斷
-  // 加在函式外面也可以運作，但是 eslint 會報錯……（return ousite of function）
   if (!process.argv[2]) {
     console.log('請輸入要查詢的國家名稱')
     console.log('request 錯誤訊息\n')

@@ -2,11 +2,8 @@ const axios = require('axios')
 const apiURL = 'https://api.twitch.tv/helix'
 const oauth2URL = 'https://id.twitch.tv/oauth2/token'
 
-// 下面 XXXX 與 YYYY 請分別填入 使用者 ID 與 密鑰
-const [clientID, clientSecret] = [
-  'XXXX',
-  'YYYY'
-]
+// 下面 XXXX 與 YYYY 請分別填入 clientID 與 client secret
+const [clientID, clientSecret] = ['XXXX', 'YYYY']
 
 let OAuthToken
 let gameID
@@ -24,7 +21,7 @@ axios({
   })
 
 // 取得 OAuth Token
-function getGameID (OAuthToken) {
+function getGameID(OAuthToken) {
   if (OAuthToken === undefined) {
     console.log('無法取得 token')
     return
@@ -37,8 +34,12 @@ function getGameID (OAuthToken) {
       }
     })
     .then(res => {
-      gameID = res.data.data[0].id
-      printStreams(gameID)
+      if (res.data.data[0] !== undefined) {
+        gameID = res.data.data[0].id
+        printStreams(gameID)
+      } else {
+        console.log('找不到您輸入的遊戲名稱')
+      }
     })
     .catch(err => {
       console.log(err)
@@ -54,7 +55,7 @@ let n = 0
 // 總共要顯示多少實況
 const number = 200
 
-function printStreams (gameID) {
+function printStreams(gameID) {
   if (gameID === undefined) {
     console.log('Can not get the game ID')
     return
