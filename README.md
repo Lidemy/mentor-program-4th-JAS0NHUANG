@@ -2,7 +2,6 @@
 
 #### 原來的 README 檔太多課程介紹的部分，為了要看每週的進度都要捲到下面去找，所以自已開了一個分支，刪掉不那麼需要的資訊，讓進度比較容易找到。
 
-- [JS101] 用 JavaScript 一步步打造程式基礎也看完。JS101 綜合練習 Lv2 以及 Lv3 其實大部分題目都與 ALG101 雷同，建議可以看一下參考解答影片。
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
 
@@ -10,12 +9,8 @@
 
 [CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
-[HW4 作業連結](/homeworks/week4)
-
 #### 自我檢測
 
-
-- [ ] P1 你知道常用的 HTTP Header
 - [ ] P1 你知道基本的 HTTP statud code，像是 200、301、400、404、500
 
 ### 第五週（07/13 ~ 07/19）：複習週
@@ -32,7 +27,7 @@
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
 
-本週將會正式進入到前端課程，開始用 HTML 與 CSS 打造出基本的網頁，並且利用 media query 實現簡單的 RWD（Responsive Web Design）。
+用 HTML 與 CSS 打造出基本的網頁，並且利用 media query 實現簡單的 RWD（Responsive Web Design）。
 
 HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性跟設定，也會講到跟 SEO 有關的一些部分（title, description, JSON-LD...）。
 
