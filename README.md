@@ -1,17 +1,10 @@
 # 我目前的進度
 
-#### 原來的 README 檔太多課程介紹的部分，為了要看每週的進度都要捲到下面去找，所以自已開了一個分支，刪掉不那麼需要的資訊，讓進度比較容易找到。
-
-
 ### 第四週（07/06 ~ 07/12）：網路基礎
 
 #### 指定教材
 
 [CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
-
-#### 自我檢測
-
-- [ ] P1 你知道基本的 HTTP statud code，像是 200、301、400、404、500
 
 ### 第五週（07/13 ~ 07/19）：複習週
 
@@ -21,7 +14,6 @@
 2. Git 的基本操作
 3. JavaScript 基本語法及程式思維
 4. 網路基本概念
-
 
 [HW5 作業連結](/homeworks/week5)
 
