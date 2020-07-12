@@ -6,30 +6,14 @@
 
 [CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
-### 第五週（07/13 ~ 07/19）：複習週
-
-這四週我們一共學了四項主要的技能：
-
-1. Command line 的使用
-2. Git 的基本操作
-3. JavaScript 基本語法及程式思維
-4. 網路基本概念
-
-[HW5 作業連結](/homeworks/week5)
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
-
-用 HTML 與 CSS 打造出基本的網頁，並且利用 media query 實現簡單的 RWD（Responsive Web Design）。
-
-HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性跟設定，也會講到跟 SEO 有關的一些部分（title, description, JSON-LD...）。
-
-主要會著重在 CSS，並且讓大家多多練習。
 
 也可以先看一下這兩篇文章（很多地方你會看不懂，但沒關係）先培養一下對前端的感覺，等幾週過後當我們學得越來越多，再看一次會有完全不同的感受：[零基礎的小明要如何成為前端工程師？](https://medium.com/hulis-blog/frontend-engineer-guide-297821512f4e)、[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
 
 #### 指定教材
 
-先看 [FE101] 前端基礎：HTML 與 CSS 這堂課熟悉 HTML 與 CSS，並且練習切版。接著可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
+可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
 
 若是還有時間，可以透過這兩個小遊戲來熟悉 CSS Selector 跟 Flexbox 排版的方法：
 
