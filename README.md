@@ -4,17 +4,7 @@
 
 #### 指定教材
 
-<<<<<<< HEAD
-[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
-=======
-這週可以直接看 [NET101] 網路基礎概論（搭配 JS 實作練習）的全部課程，去熟悉網路相關的概念，並且學習如何利用 Node.js 去串接 API。
-
-再來可以看這篇文章，重新省視一次自己對 API 的理解：[從拉麵店的販賣機理解什麼是 API](https://medium.com/@hulitw/ramen-and-api-6238437dc544)，然後看這篇文字版的傳紙條故事複習一下網路概念：[從傳紙條輕鬆學習基本網路概念](https://medium.com/@hulitw/learning-tcp-ip-http-via-sending-letter-5d3299203660)
-
-如果對於這些概念還是不熟，可以先去寫一下作業，然後看 Lidemy 上第四週課程的：「Request 額外補充（超重要）」，應該能幫你解開一些疑惑。
-
 額外補充一個影片，英文 ok 的話可以看：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
->>>>>>> 409707db7350df036fd46e8b733f96115488d265
 
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
