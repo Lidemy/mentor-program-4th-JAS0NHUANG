@@ -1,0 +1,143 @@
+* {
+  font-family: 'Noto Sans TC', 'Questrial', Sans-serif;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+  background: #eee;
+}
+
+p {
+  font-size: 14px;
+}
+
+.form {
+  margin: 121px auto 66px;
+  box-sizing: border-box;
+  padding: 55px 35px 40px 42px;
+  max-width: 645px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border-top: 8px solid #fad312;
+  box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+  &__title {
+    font-size: 36px;
+    margin: 0px;
+  }
+}
+
+.red {
+  color: #e74149;
+  font-size: 16px;
+}
+
+.required .label__title:after {
+  content: "*";
+  font-size: 16px;
+  color: #e74149;
+}
+
+label.label__title {
+  display: inline-block;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.text, .email {
+  border: 1px solid #aaa;
+  max-width: 287px;
+  width: 80%;
+  height: 23px;
+}
+
+.radio {
+  position: relative;
+  left: 20px;
+  top: 2px;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+  height: 0;
+  width: 0;
+  z-index: 3;
+  &__label {
+    cursor: pointer;
+    line-height: 3;
+  }
+  &__container {
+    position: relative;
+  }
+}
+
+.radio__checkmark {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  left:0px;
+  height: 16px;
+  width: 16px;
+  background-color: #aaa;
+  border-radius: 50%;
+  &:after {
+    content: '';
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    display: none;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 3;
+  }
+}
+
+.radio:checked {
+  & + .radio__checkmark {
+    background-color: #aaa;
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.submit {
+  border: none;
+  background: #fad312;
+  font-size: 16px;
+  width: 92px;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  color: #999999;
+  box-sizing: border-box;
+  margin: 0px;
+  line-height: 70px;
+}
+
+.warning {
+  color: #e74149;
+  position: absolute;
+  margin-top: 0px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 698px){
+  .form {
+    margin: 0 auto;
+  }
+}
