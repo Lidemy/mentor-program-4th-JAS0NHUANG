@@ -1,30 +1,21 @@
 # 我目前的進度
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
-
 #### 指定教材
-
 額外補充一個影片，英文 ok 的話可以看：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
-
-也可以先看一下這兩篇文章（很多地方你會看不懂，但沒關係）先培養一下對前端的感覺，等幾週過後當我們學得越來越多，再看一次會有完全不同的感受：[零基礎的小明要如何成為前端工程師？](https://medium.com/hulis-blog/frontend-engineer-guide-297821512f4e)、[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
-
 #### 指定教材
-
 可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
 
 如果覺得課程太理論，想要看比較偏實戰的，可以看 Lidemy 上第四期的「第六週特別補充課程：position 與 display 實戰篇 by minw 助教」相關單元，會有各種切版實戰。
 
 若是還有時間，可以透過這兩個小遊戲來熟悉 CSS Selector 跟 Flexbox 排版的方法：
-
 1. [CSS Diner](https://flukeout.github.io/)
 2. [Flexbox Froggy](http://flexboxfroggy.com/)
 
 如果你覺得切版講得很爛，可以參考看看這個：[金魚都能懂的網頁設計入門 - 金魚都能懂了你還怕學不會嗎](https://ithelp.ithome.com.tw/users/20112550/ironman/2072)
-
-[HW6 作業連結](/homeworks/week6)
 
 #### 自我檢測
 
@@ -37,31 +28,6 @@
 - [ ] P2 你知道 :nth-child 的各種用法
 - [ ] P2 你熟悉 CSS selector，可以輕鬆選到想選到的元素
 
-### 第七週（07/27 ~ 08/02）：前端基礎 JavaScript
-
-這一週將會進入到 JavaScript，讓網頁變得有互動性，並結合 `<form>` 做表單驗證，以及讓大家寫出簡單的網頁應用程式。
-
-這會是我們第一次把 JavaScript 應用在網頁上，來學習怎麼使用 JavaScript 操控 DOM 物件，讓網頁動起來。
-
-#### 指定教材
-
-這一週需要的東西幾乎都在 [FE102] 前端必備：JavaScript 這堂課裡面，看到「中場總結」就好了，後面的可以先不用看。
-
-針對 DOM 的事件傳遞，可以參考這一篇：[DOM 的事件傳遞機制：捕獲與冒泡](https://blog.techbridge.cc/2017/07/15/javascript-event-propagation/)
-
-[HW7 作業連結](/homeworks/week7)
-
-#### 自我檢測
-
-- [ ] P1 你知道 JavaScript 跑在網頁上跟跑在 Node.js 上差在哪裡
-- [ ] P1 你知道 DOM 是什麼
-- [ ] P1 你知道如何用 JavaScript 操控 DOM 物件
-- [ ] P1 你知道如何幫一個按鈕加上 event listener
-- [ ] P1 你知道捕獲與冒泡是什麼
-- [ ] P1 你知道什麼是事件代理（delegation）
-- [ ] P2 你知道怎麼用 JavaScript 更改元素的 style
-- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異 
-
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 
 之前在第四週時有提過 API，也有讓大家試著用 node.js 寫些小程式來串接。
@@ -70,7 +36,7 @@
 
 #### 指定教材
 
-把 [FE102] 前端必備：JavaScript 中場總結之後的課程看完。也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
+也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
 
 [HW8 作業連結](/homeworks/week8)
 
