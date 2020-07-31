@@ -1,0 +1,362 @@
+@mixin size(
+  $height: null,
+  $width: null,
+  $max-width: null
+) {
+  height: $height;
+  width: $width;
+  max-width: $max-width;
+}
+
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+* {
+  font-family: 'Roboto', 'sans-serif';
+  margin: 0;
+}
+
+body {
+  background: #000;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  @include size($width: 100%, $height: 65px);
+  @include position(fixed, $top: 0);
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  background: linear-gradient(#583f84, #000);
+  z-index: 5;
+  transition: height 0.2s ease-in;
+  &__wraper {
+    @include size($width: 100%, $height: 65px, $max-width: 1080px);
+    @include flex(space-between, center);
+    margin: auto;
+  }
+  &__logo {
+    @include size($height: 65px);
+    display: flex;
+    align-items: center;
+  }
+  &__logo__img {
+    display: inline-block;
+    @include size($height: 65px);
+  }
+  &__title {
+    text-align: right;
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+  }
+  &__title:hover {
+    transform: translate(5px, -5px);
+    box-shadow: #fff -5px 5px, #fff -4px 4px, #fff -3px 3px, #fff -2px 2px,
+      #fff -1px 1px;
+  }
+}
+
+.search__btn {
+  border: 2px solid #fff;
+  background: #583f84;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.main {
+  @include size($height: 100%, $width: 100%);
+  position: relative;
+  top: 75px;
+  text-align: center;
+  background: #000;
+  display: block;
+  &__games {
+    @include size($max-width: 1080px, $width: 100%);
+    @include flex(center, center);
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.preview {
+  width: 175px;
+  margin: 10px;
+  position: relative;
+}
+
+.placeholder {
+  @include size($width: 175px, $height: 240px);
+  background: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in;
+  z-index: 3;
+  &__image {
+    @include size($width: 175px, $height: 240px);
+    background: url(./img/twitch.0.0.webp) center/contain no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    transition: all 0.3s ease-in;
+  }
+  &__image:hover {
+    transform: translate(10px, -10px);
+  }
+  &__selected {
+    transform: translate(10px, -10px);
+    box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+      #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+      #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+  }
+}
+
+.placeholder:hover {
+  transform: translate(10px, -10px);
+  box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+    #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.placeholder::after {
+  @include size($width: 175px, $height: 240px);
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease-in;
+}
+
+.placeholder:hover::after {
+  background: none;
+}
+
+.right, .left {
+  @include position(absolute, $top: 0);
+  @include size($width: 70px, $height: 240px);
+  margin: 10px;
+  display: inline-block;
+  color: #583f84;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 240px;
+  z-index: 4;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right:hover, .left:hover {
+  color: #fff;
+  background: #583f84;
+  opacity: 0.5;
+}
+
+.title {
+  color: #fff;
+  min-height: 50px;
+  word-break: break-word;
+}
+
+.main__streams {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1 {
+    box-sizing: border-box;
+    border-bottom: 4px solid #583f84;
+    text-align: left;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+  }
+}
+.stream__container {
+  filter: brightness(0.9);
+  background: #222;
+  margin: 20px;
+  width: 300px;
+  transition: all 0.2s ease-in;
+}
+
+.stream__container:hover {
+  filter: brightness(1.5);
+  transform: translate(10px, -10px);
+  box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+    #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.stream__preview {
+  @include size($height: 200px, $width: 300px);
+  position: relative;
+  display: block;
+  background: url(./img/twitch.0.0.webp) center/contain no-repeat;
+}
+
+.stream__preview:after {
+  @include size($height: 200px, $width: 300px);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 0;
+}
+
+.stream__info {
+  display: flex;
+  align-items: center;
+}
+
+.stream__avatar {
+  @include size($height: 50px, $width: 50px);
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.stream__title {
+  width: 70%;
+  max-height: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.stream__title p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  width: 300px;
+  margin: 20px;
+}
+
+.linebreaker {
+  width: 100%;
+}
+
+.load__more {
+  @include size($width: 100%, $height: 80px);
+  border: none;
+  background: #583f84;
+  color: #fff;
+  margin: 80px;
+  cursor: pointer;
+}
+
+.back-to-top {
+  @include position(fixed, $right: 20px, $bottom: 10px);
+  color: #fff;
+  background: #583f84;
+  padding: 10px;
+  border: #000 2px solid;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 120px;
+    font-size: 10px;
+    &__wraper {
+      display: block;
+    }
+  }
+  .search__input {
+    width: 150px;
+  }
+  .preview {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .placeholder {
+    @include size($width: 100px, $height: 138px);
+  }
+
+  .placeholder__image {
+    @include size($width: 100px, $height: 138px);
+    top: 0px;
+    left: 0px;
+  }
+
+  .placeholder__image:hover {
+    transform: translate(5px, -5px);
+  }
+
+  .placeholder__selected {
+    transform: translate(5px, -5px);
+    box-shadow: #583f84 -5px 5px, #583f84 -4px 4px,
+      #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+  }
+
+  .placeholder:hover {
+    transform: translate(5px, -5px);
+    box-shadow: #583f84 -5px 5px, #583f84 -4px 4px,
+      #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+  }
+
+  .placeholder::after {
+    @include position(absolute, $left: 0, $top: 0);
+    @include size($height: 138px, $width: 100px);
+    content: '';
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in;
+  }
+
+  .placeholder:hover::after {
+    background: none;
+  }
+  .right, .left {
+    width: 50px;
+    top: 50;
+    margin: 0;
+  } 
+  .main {
+    top: 130px;
+  }
+}

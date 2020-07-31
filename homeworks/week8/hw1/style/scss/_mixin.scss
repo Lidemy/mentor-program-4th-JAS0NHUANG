@@ -1,0 +1,32 @@
+@mixin flex-container($position, $justify, $align) {
+  display: flex;
+  position: $position; 
+  justify-content: $justify;
+  align-items: $align;
+} 
+
+@mixin set-size($wid, $maxWid, $heig, $maxHeig) {
+  width: $wid;
+  max-width: $maxWid;
+  height: $heig;
+  max-height: $maxHeig;
+}
+
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin pseudo($display: block, $content: '') {
+  display: $display;
+  content: $content;
+}
