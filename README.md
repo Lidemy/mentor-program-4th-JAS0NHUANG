@@ -21,34 +21,15 @@
 
 - [ ] P1 你知道如何使用有語意的（semantic）標籤
 - [ ] P1 你知道基本 SEO 的概念
-- [ ] P1 你知道 inline、block 跟 inline-block 的區別
-- [ ] P1 你知道什麼是 box model
 - [ ] P1 你知道 position 的所有屬性及其差別
-- [ ] P2 你知道 :hover, :before, :after
 - [ ] P2 你知道 :nth-child 的各種用法
 - [ ] P2 你熟悉 CSS selector，可以輕鬆選到想選到的元素
 
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 
-之前在第四週時有提過 API，也有讓大家試著用 node.js 寫些小程式來串接。
-
-而前端當然也能串接 API，理解前後端如何串接是很重要的一部分，因此這週會花滿多心力再來講 API 串接，讓大家複習一下 API 的概念，並且教大家什麼是 Ajax。
-
 #### 指定教材
 
 也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
-
-[HW8 作業連結](/homeworks/week8)
-
-#### 自我檢測
-
-- [ ] P1 你知道什麼是 API
-- [ ] P1 你知道什麼是 Ajax
-- [ ] P1 你知道從網頁前端呼叫 API 與在自己電腦上寫程式呼叫的差異
-- [ ] P1 你知道什麼是同源政策（Same-origin policy）
-- [ ] P1 你知道如何存取跨網域的資源（CORS）
-- [ ] P1 你知道什麼是 JSON
-- [ ] P2 你知道什麼是 JSONP 及其原理
 
 ### 第九週（08/10 ~ 08/16）：後端基礎 PHP 與 MySQL
 
@@ -70,9 +51,7 @@
 
 #### 自我檢測
 
-- [ ] P1 你知道 PHP 是什麼
 - [ ] P1 你知道前端與後端的差別
-- [ ] P1 你知道什麼是資料庫
 - [ ] P1 你了解基本的 SQL 語法，包括 Select、Insert Into、Delete 與 Update
 - [ ] P1 你能夠寫出基本的 CRUD 應用
 - [ ] P1 你知道什麼是 Session
