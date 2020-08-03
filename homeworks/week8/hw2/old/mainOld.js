@@ -8,7 +8,7 @@ const request = new XMLHttpRequest()
 
 let topGameOffset = 0
 
-function getTopGamesRequest() {
+function getTopGamesRequest () {
   request.onload = () => {
     const json = JSON.parse(request.response)
     console.log(json)
@@ -87,7 +87,7 @@ mainGames.addEventListener('click', evt => {
 let streamNum
 let offsetNum = 0
 
-function createDivs() {
+function createDivs () {
   if (document.querySelectorAll('.empty').length > 0) {
     const emptyDivArray = [...document.querySelectorAll('.empty')]
     emptyDivArray[0].remove()
@@ -129,7 +129,7 @@ function createDivs() {
   document.querySelector('.main__streams').appendChild(loadMoreBtn)
 }
 
-function showStreams(gameTitle) {
+function showStreams (gameTitle) {
   let streamData
   request.onload = () => {
     streamData = JSON.parse(request.response)

@@ -205,11 +205,13 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   h1 {
+    display: block;
+    min-height: 55px;
     box-sizing: border-box;
     border-bottom: 4px solid #583f84;
     text-align: left;
     color: #fff;
-    padding: 5px;
+    padding: 5px 15px;
     width: 100%;
   }
 }

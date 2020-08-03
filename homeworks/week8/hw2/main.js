@@ -9,9 +9,14 @@ let streamDivNum
 let streamOffset = 0
 let lastSelectedGame
 let selectedGame
+let firstLoad = true
 
 // escape html
 function escapeHtml(unsafe) {
+  if (unsafe === undefined || unsafe === '') {
+    lastSelectedGame = null
+    return 'All'
+  }
   return unsafe
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -19,6 +24,8 @@ function escapeHtml(unsafe) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;')
 }
+
+sendRequest(`${API_URL}/games/top?limit=6&offset=${topGameOffset}`, null, showTopGames)
 
 // send request function
 function sendRequest(requestUrl, selectedGame, callback) {
@@ -33,8 +40,6 @@ function sendRequest(requestUrl, selectedGame, callback) {
   }
   request.send()
 }
-
-sendRequest(`${API_URL}/games/top?limit=6&offset=${topGameOffset}`, null, showTopGames)
 
 // top game section
 function showTopGames(responseData) {
@@ -58,6 +63,11 @@ function showTopGames(responseData) {
     gameNum.querySelector('.title').innerHTML = json.top[i].game.name
   }
   topGameOffset += 5
+  if (firstLoad === true) {
+    createDivs()
+    sendRequest(`${API_URL}/streams/?limit=20&offset=0`, '', showStreams)
+    firstLoad = false
+  }
 }
 
 function clearPreview() {
@@ -203,6 +213,10 @@ document.querySelector('.search__btn').addEventListener('click', evt => {
 document.querySelector('.main__streams').addEventListener('click', evt => {
   if (evt.target.innerHTML === 'Load More') {
     createDivs()
+    if (!selectedGame) {
+      sendRequest(`${API_URL}/streams/?limit=20&offset=${streamOffset - 20}`, '', showStreams)
+      return
+    }
     sendRequest(
       `${API_URL}/streams/?game=${encodeURIComponent(selectedGame)}&limit=20&offset=${streamOffset - 20}`
       , selectedGame, showStreams)
