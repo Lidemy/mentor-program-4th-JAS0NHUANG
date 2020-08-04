@@ -1,0 +1,131 @@
+@import 'mixin';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './page/index';
+@import './page/faq';
+@import './page/lottery';
+
+/* ---------- for all ---------- */
+* {
+  font-family: 'Noto Sans TC', 'Questrial', Sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #010101;
+}
+
+h2 {
+  font-size: 36px;
+  border-left: solid 15px #a3dea2;
+  padding-left: 15px;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+section {
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------- RWD ---------- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 320px;
+    word-wrap: no-wrap;
+  }
+  h2 {
+    font-size: 26px;
+    word-break: keep-all;
+  }
+  .header {
+    position: relative;
+  }
+
+  .header__wraper {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    font-size: 34px;
+    color: #489846;
+    margin: 25px 0px;
+    word-break: keep-all;
+    width: 100%;
+  }
+
+  nav {
+    margin-right: 0px;
+  }
+
+  ul {
+    @include flex-container(relative, center, auto);
+    padding: 0px;
+    margin: 13px 0px;
+    width: 100%;
+  }
+
+  li.nav__items > a {
+    font-size: 17px;
+    margin: 0px;
+    width: 15%;
+    padding: 10px 5px;
+    border-radius: 0px;
+    transition: all 0.3s ease-in;
+  }
+
+  #banner__wraper,
+  h1 {
+    padding-top: 0px;
+    height: 320px;
+  }
+
+  #btn__order,
+  #btn__query {
+    word-break: keep-all;
+    padding: 45px 60px;
+    font-size: 26px;
+  }
+
+  .menu__img {
+    @include set-size(100%, 450px, auto, auto);
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    min-width: 300px;
+  }
+
+  #reviews__box {
+    margin: 0px;
+    padding: 0px;
+  }
+  .reviews__container {
+    min-width: 280px;
+  }
+
+  #footer__info {
+    flex-direction: column-reverse;
+  }
+  #footer__contact,
+  #footer__logo {
+    margin: 25px 25px;
+  }
+  .lottery {
+    &__main {
+      top: 0px;
+      margin: 0;
+      min-height: 960px;
+    }
+    &__sections {
+      display: block;
+    }
+    &__left, &__desc {
+      width: 100%;
+    }
+  }
+}

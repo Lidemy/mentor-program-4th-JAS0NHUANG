@@ -1,0 +1,89 @@
+/* ---------- lottery ---------- */
+.lottery {
+  &__main {
+    @include position(relative, $top: 85px);
+    color: #322929;
+    text-align: center;
+    min-height: 820px;
+    max-width: 1920px;
+    margin: auto;
+    margin-bottom: 85px;
+    padding: 20px 0px 50px 0px;
+    &:after {
+      @include set-size(100%, null, 100%, null);
+      @include position(absolute, $top: 0, $left: 0);
+      @include pseudo($content: '');
+      background: #000;
+      opacity: 0.3;
+    }
+    hr {
+      border-top: 1px dotted #ccc;
+      border-bottom: none;
+    }
+  }
+  &__mainImg {
+    background: url(../img/games-bn.jpg) center/cover no-repeat;
+  }
+  &__firstImg {
+    background: url(../img/bg.jpg) center/cover no-repeat;
+  }
+  &__secondImg {
+    background: url(../img/living-room-1872192_1920.jpg) center/cover no-repeat;
+  }
+  &__thirdImg {
+    background: url(../img/youtube-2617510_1920.jpg) center/cover no-repeat;
+  }
+  &__form {
+    @include position(relative, $top: 55px);
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.8);
+    z-index: 3;
+  }
+  &__prize {
+    color: #fff;
+    font-size: 28px;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5ec1b6;
+    text-align: center;
+  }
+  &__sections {
+    @include flex-container(relative, auto, left);
+  }
+  &__left {
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+  }
+  &__left:after {
+    content: ":";
+  }
+  &__desc {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+  }
+  &__submit {
+    @include set-size(80%, calc(500px * 0.8), 55px, auto);
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    background: #e62a45;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.normal {
+  max-width: 500px;
+}
+
+.wide {
+  max-width: 768px;
+  background: none;
+}

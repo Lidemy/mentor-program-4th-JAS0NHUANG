@@ -1,0 +1,42 @@
+/* ------------------- faq__section ---------- */
+h3 {
+  font-weight: normal;
+  margin: 20px 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+h3 span {
+  display: inline-block;
+  font-size: 24px;
+  color: #70b282;
+  margin-right: 10px;
+}
+#faq__section {
+  @include set-size(100%, 768px, 100%, auto);
+  @include position(relative, $top: 75px);
+  display: block;
+  margin: 20px auto 100px auto;
+}
+
+.faq__questions {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin: 29px 0px;
+  border-bottom: 1px solid #70b282;
+  padding: 10px;
+}
+
+.faq__message {
+  box-sizing: border-box;
+  padding-left: 68px;
+  margin: 15px auto;
+  text-align: left;
+  display: none;
+  position: relative;
+}
+
+.show__message {
+  display: inline-block;
+  width: 90%;
+}

@@ -1,0 +1,40 @@
+/* ---------- footer ---------- */
+footer {
+  @include set-size(100%, 1920px, auto, auto);
+  position: relative;
+  margin: 0px auto 0px auto;
+}
+
+#footer__info {
+  @include flex-container(relative, space-between, auto);
+  font-size: 16px;
+  color: #484848;
+  background-color: #e8efee;
+}
+
+#footer__contact {
+  margin: 35px 10px 0px 60px;
+}
+
+#footer__logo {
+  margin: 35px 60px 0px 10px;
+}
+
+#footer__logo :first-child {
+  font-size: 36px;
+  color: #489846;
+}
+
+#footer__copyright {
+  display: block;
+  background-color: #35564b;
+  text-align: center;
+}
+#footer__copyright > p {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0px;
+}
+
+
