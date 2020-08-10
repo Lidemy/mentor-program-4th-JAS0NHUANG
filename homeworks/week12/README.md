@@ -4,49 +4,77 @@
 
 之前在 BE101 的最後，有做了一個留言板的 API，並且自己利用前端 JS 去串接，有顯示留言跟新增留言這兩個功能，如果你忘記的話可以回去複習一下。
 
-這一週呢，你要負責來增強這個專案，請加上以下功能：
+而這一週的第一個作業會由我帶著你做，我們會做出：
 
-1. 分頁功能（要能夠顯示現在在哪一頁、切換到其他分頁等等，一頁顯示 5 個留言就好，這樣比較好測）
-2. 由帳號機制改成以前那種可以自己輸入暱稱的方式留言（所以沒辦法與原本留言板的資料庫共用，要新開一個）
+1. 留言板的 API，能夠新增留言以及顯示留言
+2. 寫一個前端頁面，串接自己寫的 API
 
-介面的部分請使用 Bootstrap，JS 的部分也請盡量用 jQuery，版面隨自己喜好設置就可以了。
+帶你做的影片請參考 MTR04 這堂課程。
 
-總結一下，這個作業有兩個東西要做：
+~~帶你做完以後，你要自己從頭實作一遍並且加上一個新功能：分頁。~~
 
-1. 自己實作出留言板 API，要能夠新增留言以及顯示留言
-2. 串接自己做出來的 API
+~~留言板每一頁最多顯示 5 個留言，網站最底下需要顯示分頁，要能夠顯示現在在哪一頁、總共有幾頁還有前往上一頁跟下一頁的功能。~~
 
-## hw2：打造短網址服務
+接著是這一週你要自己實作的新功能。
 
-短網址服務的原理其實很簡單，那就是背後有一個 table 紀錄了短網址跟長網址的關聯，當使用者造訪短網址的時候，就把使用者用 302 redirect 導到長網址去即可。
+原本要讓大家實作分頁功能，所以你在影片中可能會看到上面舊的作業敘述。
 
-因此呢，請你做一個簡易短網址的 API，檔案名稱會是：
+但後來我想了一下，改做：「載入更多」的功能就好。  
 
-1. create_url.php（處理縮網址的需求）
+如果留言大於 5 筆的話，下面會出現「載入更多」的按鈕，按下去就會載入新的 5 筆留言。因為留言是從新排到舊，所以越下面的留言會越舊。當沒有更多留言可以載入時，就不會出現載入更多的按鈕。
 
-除此之外，你還需要兩個 PHP 檔：
-1. r.php （把短網址導到長網址）
-2. index.php（提供縮網址功能）
+介面的部分請盡量使用 Bootstrap，JS 的部分也請盡量用 jQuery，版面可以隨自己的喜好調整。
 
-r.php 的功能很簡單，就是接收短網址然後導到原本的網址去。
+![](comments.png)
 
-例如說 r.php?id=abc123，可能就會連到 google.com 去之類的。
+<details>
+  <summary>提示 #1</summary>
+  
+  在實作以前可以搜尋關鍵字：「cursor based pagination」，或者是參考底下資料：
 
-至於 create_url.php 則是負責縮網址的部分。
+1. [API做翻页的两种思路](https://www.cnblogs.com/cgzl/p/10706881.html)
+2. [How to do Pagination?](https://b96016.gitlab.io/post/how-to-pagination/)
+3. [Pagination with Relative Cursors](https://engineering.shopify.com/blogs/engineering/pagination-relative-cursors)
 
-可以用 POST 的方式把要縮的網址傳到 create_url.php 去，而且可以接收一個參數叫做「custom_url」，如果有這個參數，代表使用者想要自訂短網址。
+</details>
 
-例如說把 google.com 帶到 create_url.php，可能會產生一個短網址是：http://example.com/r.php?id=abc123
+## hw2：Todo List
 
-但如果我把 google.com 以及 custom_url=g 一起傳給 server，產生的短網址就會是：http://example.com/r.php?id=g
+之前在第七週的時候有實作過一個 todo list，那時只有支援新增、刪除已經標記完成，但比較完整的 todo list 應該會長這個樣子：
 
-介面的部分請使用 Bootstrap，JS 的部分也請盡量用 jQuery，前端版面的部分請自己設計。
+![](todo.png)
 
-總結一下，這個作業你會做出一個 index.php，畫面上會有兩個輸入框，一個讓使用者輸入長網址，一個輸入自訂短網址，還有一個按鈕叫做「產生短網址」。
+參考連結：http://todomvc.com/examples/vanillajs/
 
-當按鈕按下去以後，前端會用 ajax 去呼叫後端的 create_url.php，然後拿到一個縮好的網址，格式一定會是：http://example.com/r.php?id=xxx
+需要支援的功能有：
 
-接著使用者點了這個網址以後，就會透過 r.php 幫忙把後面帶的短網址轉換為原本的網址，並且導到原本的網址去，屬於你的縮網址服務就這樣完成了。
+1. 新增 todo
+2. 編輯 todo
+3. 刪除 todo
+4. 標記完成/未完成
+5. 清空 todo
+6. 篩選 todo（全部、未完成、已完成）
+
+除此之外，請你再加上一個功能，那就是會有一個「儲存」的按鈕，按下去以後會把目前 todo 的狀態送到 server 去儲存，並且回傳一個獨特的 id，以後使用者如果有帶這個 id，就自動把它的 todo 載入進來。
+
+舉例來說，原本的網址可能是`https://example.com/todos.php`，按下儲存以後網址變成：`https://example.com/todos.php?id=5`，下次我用同樣網址進來時，就可以看到我之前儲存好的 todo item。
+
+這邊一樣是前後端串接，你必須要用 ajax 來傳遞資料。所以你要思考的問題是：
+
+1. 怎麼把 todo 的狀態變成字串傳到 server
+2. 怎麼樣偵測網址上的 id，並且送出 request 到後端抓取 todos
+3. 怎麼樣把 todos 顯示在前端
+
+介面的部分請盡量使用 Bootstrap，JS 的部分也請盡量用 jQuery，版面隨自己喜好設置就可以了，不需要跟上面那個圖片長得一樣。
+
+<details>
+  <summary>提示 #1</summary>
+  
+  你可能會思考說要怎麼把 todos 的狀態存起來，其實你只要在前端用 JSON.stringify，把 todos 變成一個 JSON 字串送到後端存起來就好。
+
+  要恢復時就可以從後端拿資料，JSON.parse 之後你就有了 todos 的狀態。
+
+</details>
 
 ## hw3：簡答題
 
