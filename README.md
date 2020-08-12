@@ -49,6 +49,8 @@
 
 針對 DOM 的事件傳遞，可以參考這一篇：[DOM 的事件傳遞機制：捕獲與冒泡](https://blog.techbridge.cc/2017/07/15/javascript-event-propagation/)
 
+另外附增一個好用的網站：https://htmldom.dev/
+
 [HW7 作業連結](/homeworks/week7)
 
 #### 自我檢測
@@ -94,11 +96,13 @@
 
 觀看 [BE101] 用 PHP 與 MySQL 學習後端基礎並跟著動手做，看到「真正的實戰：留言板 - 修正問題篇」裡面的「PHP 內建 session 機制」就好，同時跟著裡面的教學把留言板實作出來。
 
+（「基礎實戰：Job board 職缺報報」跟「基礎實戰：Blog 部落格」屬於比較早期拍的影片，程式碼的風格跟其他的可能會不一樣，建議你可以先跳過這兩個段落，實戰的部分直接看「真正的實戰：留言板 - 初階實作篇」，如果覺得看不太懂，再回來看這兩個早期拍的）
+
 並且透過以下幾篇文章加深對 Cookie 與 Session 的理解：
 
 1. [白話 Session 與 Cookie：從經營雜貨店開始](https://medium.com/@hulitw/session-and-cookie-15e47ed838bc)
 2. [淺談 Session 與 Cookie：一起來讀 RFC](https://blog.huli.tw/2019/08/09/session-and-cookie-part2/)
-3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)
+3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)  （這篇看不懂沒關係，很正常）
 
 [HW9 作業連結](/homeworks/week9)
 
@@ -132,6 +136,8 @@
 
 如果你點進去看到一片白畫面，這是正常的，並不是網頁壞掉。難道網頁看不見東西就是真的沒東西嗎？
 
+看到 `{s: "恭喜破關！flag: m3nT0rPr0GRAm666", error: false}` 就代表你已經全過囉，沒錯，關卡就是這麼少。
+
 ### 闖關遊戲
 
 一共十關，看你能闖到第幾關：[r3:0 異世界網站挑戰](https://r30challenge.herokuapp.com/)（特別感謝第三期 @minw 製作遊戲）。
@@ -150,7 +156,7 @@
 
 把 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分繼續看完，看到「真正的實戰：留言板 - 再次修正問題篇」結束，有時間的話也可以把整堂課都看完。
 
-也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0)
+也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0) （有時間再看）
 
 有一個與資安相關的東西叫做 CSRF，在課程中沒有講，是考驗你自學能力的時候，推薦閱讀這篇：[讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
 
@@ -178,7 +184,11 @@
 
 #### 指定教材
 
-請先參考 [BE101] 裡面「真正的實戰：留言板 - API 篇」的內容，跟著影片一步步把留言板 API 做出來，再來可以看 [FE201] 前端中階：那些前端會用到的工具們，學習 jQuery 與 Bootstrap 的使用，並且跟著裡面的教學整合 [BE101] 裡面的 API。
+請先參考 [BE101] 裡面「真正的實戰：留言板 - API 篇」的內容，先大概知道一下怎麼用 PHP 做出 API。
+
+再來可以看 [FE201] 前端中階：那些前端會用到的工具們，學習 jQuery 與 Bootstrap 的使用（其他的工具先不用看）。
+
+最後再看這一週的補充教學影片（在 MTR04 裡面），跟著完成作業一的基本功能，並且按照作業一的指示自己加強功能。
 
 [HW12 作業連結](/homeworks/week12)
 
@@ -198,8 +208,9 @@
 這週基本上是延續上週的課程，介紹簡單好用的現代前端工具，包括：
 
 1. CSS 預處理器
-2. Gulp
-3. Webpack
+2. Babel
+3. Gulp
+4. Webpack
 
 也會幫大家補充一些 CSS 相關的知識，像是：
 
@@ -208,7 +219,13 @@
 
 #### 指定教材
 
-可以看 [FE201] 前端中階：那些前端會用到的工具們來學習這週的工具。
+可以看 [FE201] 前端中階：那些前端會用到的工具們來學習這週的工具，這週會把上週沒學到的 CSS 預處理器、Babel、gulp 跟 webpack 都學完。
+
+再次強調，對於這些工具，只要稍微知道怎麼使用即可，想深入研究的話再深入研究就好，我只想讓大家知道這些工具出現的意義還有要解決的問題而已。
+
+關於 webpack，看完課程或是看課程之前都可以參考這篇文章：[webpack 新手教學之淺談模組化與 snowpack](https://blog.huli.tw/2020/01/21/webpack-newbie-tutorial/)。
+
+課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
 
 [HW13 作業連結](/homeworks/week13)
 

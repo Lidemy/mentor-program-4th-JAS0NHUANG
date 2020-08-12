@@ -1,0 +1,325 @@
+/* ---------- for all ---------- */
+* {
+  font-family: "Microsoft JhengHei", "Noto Sans TC", "Questrial", Sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #010101;
+}
+
+h2.section__title {
+  font-size: 36px;
+  border-left: solid 15px #a3dea2;
+  padding-left: 15px;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+.sections {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------- header ---------- */
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+  z-index: 3;
+}
+.header__wraper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  background: #fff;
+}
+.header__logo {
+  font-size: 36px;
+  color: #489846;
+  margin: 25px 0px 25px 56px;
+}
+
+.nav {
+  margin-right: 56px;
+}
+.nav__list {
+  display: flex;
+  padding: 0px;
+  justify-content: space-between;
+}
+.nav__items {
+  display: inline-block;
+  color: #010101;
+  word-break: keep-all;
+}
+.nav__links {
+  margin: 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+}
+.nav__links:hover {
+  background-color: #ff7286;
+  color: #fff;
+}
+
+/* ---------- banner ---------- */
+.banner {
+  padding-top: 91px;
+  height: 480px;
+}
+.banner__title {
+  display: inline-block;
+  position: absolute;
+  padding-top: 91px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  line-height: 480px;
+  height: 100%;
+  z-index: 2;
+  font-family: MicrosoftJhengHei;
+  color: #fff;
+  font-size: 60px;
+}
+.banner__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: center/cover url(./img/2.jpg) no-repeat;
+}
+.banner__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+
+/* ---------- intro ---------- */
+.intro {
+  margin: 40px auto;
+}
+.intro__texts {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0px 35px;
+}
+
+/* ---------- btn section ---------- */
+.btn {
+  margin: 40px auto;
+}
+.btn__order, .btn__query {
+  border: none;
+  padding: 65px 80px;
+  color: #3e613d;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.btn__order:hover, .btn__query:hover {
+  transform: scale(1.05);
+}
+.btn__order {
+  background-color: #a8e8e1;
+}
+.btn__query {
+  background-color: #f9f9b5;
+}
+
+/* ---------- menu ---------- */
+.menu__wraper {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  margin: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu__img {
+  margin: 0px;
+  display: inline-block;
+  width: 25%;
+  min-width: 375px;
+}
+.menu__img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- review ---------- */
+.reviews__box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.reviews__container {
+  width: 28%;
+  min-width: 280px;
+  margin: 50px 10px;
+  padding: 0px 10px 25px 10px;
+  border-radius: 5px;
+  box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+  border: solid 1px #c7e5ec;
+}
+.reviews__avatars {
+  height: 105px;
+  width: 105px;
+  margin: auto;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.reviews__content {
+  margin-top: -45px;
+}
+
+/* ---------- location ----------- */
+.location {
+  width: 90%;
+  max-width: calc(1920px \* 0.9);
+}
+
+.location__map {
+  display: block;
+  width: 100%;
+}
+
+/* ---------- footer ---------- */
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  margin: 43px auto 0px auto;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #484848;
+  background-color: #e8efee;
+}
+.footer__contact {
+  margin: 35px 10px 0px 60px;
+}
+.footer__logo {
+  margin: 35px 60px 0px 10px;
+}
+.footer__logo p:first-child {
+  font-size: 36px;
+  color: #489846;
+}
+.footer__copyright {
+  display: block;
+  background-color: #35564b;
+  text-align: center;
+}
+.footer__copyright p {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0px;
+}
+
+/* ---------- RWD ---------- */
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+  .header__wraper {
+    flex-direction: column;
+  }
+  .header__logo {
+    font-size: 34px;
+    color: #489846;
+    margin: 25px 0px;
+    word-break: keep-all;
+    width: 100%;
+  }
+
+  .nav {
+    margin-right: 0px;
+  }
+  .nav__list {
+    display: flex;
+    padding: 0px;
+    margin: 13px 0px;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav__links {
+    font-size: 17px;
+    margin: 0px;
+    width: 15%;
+    padding: 10px 5px;
+    border-radius: 0px;
+    transition: all 0.3s ease-in;
+  }
+
+  .banner {
+    padding-top: 0px;
+    height: 320px;
+  }
+  .banner__title {
+    font-size: 36px;
+    line-height: 320px;
+    word-wrap: no-wrap;
+    padding-top: 0px;
+    height: 320px;
+  }
+
+  .section__title {
+    font-size: 26px;
+    word-break: keep-all;
+  }
+
+  .btn__order, .btn__query {
+    word-break: keep-all;
+    padding: 45px 60px;
+    font-size: 26px;
+  }
+
+  .menu__img {
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    max-width: 450px;
+    min-width: 300px;
+  }
+
+  .reviews__box {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .footer__info {
+    flex-direction: column-reverse;
+  }
+  .footer__contact, .footer__logo {
+    margin: 25px 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

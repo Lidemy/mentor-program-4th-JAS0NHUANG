@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  <title>新拖延運動報名表單</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="" class="form">
+    <h1 class="form__title">
+      新拖延運動報名表單
+    </h1>
+    <p class="form__content">
+      活動日期：2020/12/10 ~ 2020/12/11
+    </p>
+    <p class="form__content">
+      活動地點：台北市大安區新生南路二段1號
+    </p>
+    <p class="form__content">
+      <span class="red">
+        *必填
+      </span>
+    </p>
+   
+    <div class="required">
+      <label class="label__title" for="user__name">暱稱</label>
+      <br>
+      <input class="text" type="text" name="user__name" placeholder="您的回答"><br>
+      <p class="warning hidden">請輸入您的暱稱</p>
+    </div>
+
+    <div class="required">
+      <label class="label__title" for="user__email">電子郵件</label>
+      <br>
+      <input class="email" type="email" name="user__email" placeholder="您的電子郵件"><br>
+      <p class="warning hidden">請輸入您的電子郵件</p>
+    </div>
+
+    <div class="required">
+    <label class="label__title" for="user__phone">手機號碼</label><br>
+    <input class="text" type="text" name="user__phone" placeholder="您的手機號碼"><br>
+    <p class="warning hidden">請輸入您的手機號碼</p>
+    </div>
+
+    <div class="radio__container required">
+      <label class="label__title" for="user__type">報名類型</label><br>
+      <div class="type__1">
+        <input class="radio" type="radio" name="user__type" id="type__1">
+        <span class="radio__checkmark"></span>
+        <label class="radio__label" for="type__1">躺在床上用想像力實作</label><br>
+      </div>
+      <div class="type__2">
+        <input class="radio" type="radio" name="user__type" id="type__2">
+        <span class="radio__checkmark"></span>
+        <label  class="radio__label" for="type__2">趴在地上滑手機找現成的</label><br>
+      </div>
+      <p class="warning hidden">請選擇報名類型</p>
+    </div>
+
+    <div class="required">
+      <label class="label__title" for="how">怎麼知道這個活動的？</label><br>
+      <input class="text" type="text" name="user__how" placeholder="您的回答"><br>
+      <p class="warning hidden">請輸入您的回答</p>
+    </div>
+
+    <div class="notRequired">
+      <label class="label__title" for="other">其他</label><br>
+      <input class="text" type="text" name="other" placeholder="您的回答"><br>
+    </div>
+
+    <input class="submit" type="submit" value="提交"><br>
+
+    <p class="form__content">
+      請勿透過表單送出您的密碼。
+    </p>
+
+  </form>
+
+  <footer>
+    © 2020 © Copyright. All rights Reserved.
+  </footer>
+
+      <script type="text/javascript" src="./validation.js">
+      </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+.debug {
+  outline: 1px solid gold;
+}
+* {
+  font-family: 'sans-serif';
+  margin: 0;
+}
+
+body {
+  background: #000;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  height: 65px;
+  background: linear-gradient(#583f84, #000);
+  z-index: 5;
+  transition: height 0.2s ease-in;
+}
+
+.header__wraper {
+  height: 65px;
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  height: 65px;
+  max-width: 30%;
+}
+
+.header__logo__img {
+  display: inline-block;
+  height: 65px;
+}
+
+.header__title {
+  text-align: right;
+  display: inline-block;
+  color: #fff;
+  padding: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.header__title:hover {
+  transform: translate(5px, -5px);
+  box-shadow: #fff -5px 5px, #fff -4px 4px, #fff -3px 3px, #fff -2px 2px,
+    #fff -1px 1px;
+}
+
+.main {
+  position: relative;
+  top: 75px;
+  text-align: center;
+  background: #000;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.main__games {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.preview {
+  width: 175px;
+  margin: 10px;
+  position: relative;
+}
+
+.placeholder {
+  background: none;
+  cursor: pointer;
+  position: relative;
+  width: 175px;
+  height: 240px;
+  transition: all 0.3s ease-in;
+  z-index: 3;
+}
+
+.placeholder__image {
+  background: url(./img/twitch.0.0.webp) center/contain no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 175px;
+  height: 240px;
+  z-index: 0;
+  transition: all 0.3s ease-in;
+}
+
+.placeholder__image:hover {
+  transform: translate(10px, -10px);
+}
+
+.placeholder__selected {
+  transform: translate(10px, -10px);
+  box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+    #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.placeholder:hover {
+  transform: translate(10px, -10px);
+  box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+    #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.placeholder::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 175px;
+  height: 240px;
+  transition: all 0.3s ease-in;
+}
+
+.placeholder:hover::after {
+  background: none;
+}
+
+.right,
+.left {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  display: inline-block;
+  color: #583f84;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 240px;
+  height: 240px;
+  width: 70px;
+  z-index: 4;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right:hover,
+.left:hover {
+  color: #fff;
+  background: #583f84;
+  opacity: 0.5;
+}
+
+.title {
+  color: #fff;
+  min-height: 50px;
+  word-break: break-word;
+}
+
+.main__streams {
+  max-width: 1080px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.main__streams h1 {
+  box-sizing: border-box;
+  border-bottom: 4px solid #583f84;
+  text-align: left;
+  color: #fff;
+  padding: 5px;
+  width: 100%;
+}
+
+.stream__container {
+  filter: brightness(0.9);
+  background: #222;
+  margin: 20px;
+  width: 300px;
+  transition: all 0.2s ease-in;
+}
+
+.stream__container:hover {
+  filter: brightness(1.5);
+  transform: translate(10px, -10px);
+  box-shadow: #583f84 -10px 10px, #583f84 -9px 9px, #583f84 -8px 8px,
+    #583f84 -7px 7px, #583f84 -6px 6px, #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.stream__preview {
+  position: relative;
+  display: block;
+  height: 200px;
+  width: 300px;
+  background: url(./img/twitch.0.0.webp) center/contain no-repeat;
+}
+
+.stream__preview:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 200px;
+  width: 300px;
+  z-index: 0;
+}
+
+.stream__info {
+  display: flex;
+  align-items: center;
+}
+
+.stream__avatar {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.stream__title {
+  width: 70%;
+  max-height: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.stream__title p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  width: 300px;
+  margin: 20px;
+}
+
+.loadmore__btn {
+  display: block;
+  width: 300px;
+}
+
+.linebreaker {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background: #583f84;
+  color: #fff;
+  margin: 80px;
+  cursor: pointer;
+}
+
+.back-to-top {
+  position: fixed;
+  color: #fff;
+  right: 20px;
+  bottom: 10px;
+  background: #583f84;
+  padding: 10px;
+  border: #000 2px solid;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 65px;
+    font-size: 10px;
+  }
+    .preview {
+    width: 100px;
+    margin: 5px;
+  }
+
+.placeholder {
+  width: 100px;
+  height: 138px;
+}
+
+.placeholder__image {
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 138px;
+}
+
+.placeholder__image:hover {
+  transform: translate(5px, -5px);
+}
+
+.placeholder__selected {
+  transform: translate(5px, -5px);
+  box-shadow: #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.placeholder:hover {
+  transform: translate(5px, -5px);
+  box-shadow: #583f84 -5px 5px, #583f84 -4px 4px,
+    #583f84 -3px 3px, #583f84 -2px 2px, #583f84 -1px 1px;
+}
+
+.placeholder::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 138px;
+  transition: all 0.3s ease-in;
+}
+
+.placeholder:hover::after {
+  background: none;
+}
+.right,
+.left {
+  width: 50px;
+  top: 50;
+  margin: 0;
+} 
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>未來事件許願池</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="the__list blue__color blue__light">
+    <div class="button">
+      <button class="blue__button blue__color" />
+    </div>
+      <h1>未來事件許願池</h1>
+      <form action="" class="add__todo__form">
+        <input class="add__todo blue__color" type="text" placeholder="在這裡許下你的願望" />
+      </form>
+      <ul class="todo__ul">
+        <li class="blue__background">
+          <input type="checkbox" />
+          <div class="checkbox__replace"></div>
+          <div class="todo__content">作業寫的快又好！</div>
+          <div class="delete">X</div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+
+    <!--
+    <script>
+      const addTodo = document.querySelector('#add__todo__form')
+      const todoUl = document.querySelector('#todo__ul')
+      const toggleButton = document.querySelector('button')
+      let todoCount = 0
+      let todoArray = []
+
+      function escapeHtml(unsafe) {
+        return unsafe
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;')
+      }
+
+      let currentColor = 'blue'
+      let changeToColor = 'green'
+
+      function toggler(currentColor, changeToColor, element) {
+        const currentColorAndElement = `${currentColor}__${element}`
+        const changeToColorAndElement = `${changeToColor}__${element}`
+        const current = document.querySelectorAll(`.${currentColorAndElement}`) 
+        for (let i in [...current]) {
+          current[i].classList.add(changeToColorAndElement)
+          current[i].classList.remove(currentColorAndElement)
+        }
+      }
+
+      toggleButton.addEventListener('click', evt => {
+        toggler(currentColor, changeToColor, 'color')
+        toggler(currentColor, changeToColor, 'background')
+        toggler(currentColor, changeToColor, 'light')
+        toggler(currentColor, changeToColor, 'done')
+        toggler(currentColor, changeToColor, 'button')
+        toggler(currentColor, changeToColor, 'checked')
+
+        if (currentColor === 'blue') {
+          currentColor = 'green'
+          changeToColor = 'blue'
+        } else {
+          currentColor = 'blue'
+          changeToColor = 'green'
+        }
+     })
+
+      addTodo.addEventListener('submit', evt => {
+        evt.preventDefault()
+        if (addTodo[0].value !== '' && !todoArray.includes(addTodo[0].value)) {
+          todoArray.push(escapeHtml(addTodo[0].value))
+          const newLi = document.createElement('li')
+          newLi.classList.add(`${currentColor}__background`)
+          todoUl.appendChild(newLi)
+          todoCount += 1
+          newLi.id = `todo__${todoCount}`
+          newLi.innerHTML = `
+            <input type="checkbox">
+            <div class="checkbox__replace"></div>
+            <div class="todo__content">
+              ${escapeHtml(
+                addTodo[0].value
+              )}
+            </div>
+            <div class="delete">X</div>
+          `
+        }
+        addTodo[0].value = ''
+      })
+
+      todoUl.addEventListener('click', evt => {
+        if (evt.target.className === 'delete') {
+          let p = evt.target.parentNode
+          p.remove()
+          todoArray = todoArray.filter(item => {
+            return item !== evt.target.parentNode.childNodes[1].innerHTML
+          })
+          return
+        }
+        if (evt.target.type === 'checkbox') {
+          let p = evt.target.parentNode
+          if (evt.target.checked === true) {
+            p.classList.add(`${currentColor}__done`)
+            evt.target.nextElementSibling.classList.add(`${currentColor}__checked`)
+            
+          } else {
+            p.classList.remove(`${currentColor}__done`)
+            evt.target.nextElementSibling.classList.remove(`${currentColor}__checked`)
+          }
+        }
+      })
+    </script>
+    -->
+  </body>
+</html>

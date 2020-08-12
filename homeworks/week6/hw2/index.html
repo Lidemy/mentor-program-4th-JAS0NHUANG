@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="" class="form">
+    <h1 class="form__title">
+      新拖延運動報名表單
+    </h1>
+    <p class="form__content">
+      活動日期：2020/12/10 ~ 2020/12/11
+    </p>
+    <p class="form__content">
+      活動地點：台北市大安區新生南路二段1號
+    </p>
+    <p class="form__content">
+      <span class="red">
+        *必填
+      </span>
+    </p>
+    
+    <label class="label__title required" for="user__name">
+      暱稱
+    </label>
+    <br>
+    <input class="text" type="text" name="user__name" placeholder="您的回答"><br>
+
+    <label class="label__title required" for="user__email">
+      電子郵件
+    </label>
+    <br>
+    <input class="email" type="email" name="user__email" placeholder="您的電子郵件"><br>
+
+    <label class="label__title required" for="user__phone">
+      手機號碼
+    </label><br>
+    <input class="text" type="text" name="user__phone" placeholder="您的手機號碼"><br>
+
+    <div class="radio__container">
+      <label class="label__title required" for="user__type">
+      報名類型
+      </label><br>
+    <input class="radio" type="radio" id="type__1" name="user__type">
+    <span class="radio__checkmark"></span>
+    <label class="radio__label" for="type__1">躺在床上用想像力實作</label><br>
+    <input class="radio" type="radio" id="type__2" name="user__type">
+    <span class="radio__checkmark"></span>
+    <label  class="radio__label" for="type__2"> 趴在地上滑手機找現成的</label><br>
+    </div>
+
+    <label class="label__title required" for="how">
+      怎麼知道這個活動的？
+    </label><br>
+    <input class="text" type="text" name="user__phone" placeholder="您的回答"><br>
+
+    <label class="label__title" for="other">
+      <div>其他</div>
+    </label><br>
+    <input class="text" type="text" name="other" placeholder="您的回答"><br>
+
+    <input class="submit" type="submit" value="提交"><br>
+
+    <p class="form__content">
+      請勿透過表單送出您的密碼。
+    </p>
+
+  </form>
+
+  <footer>
+    © 2020 © Copyright. All rights Reserved.
+  </footer>
+</body>
+</html>

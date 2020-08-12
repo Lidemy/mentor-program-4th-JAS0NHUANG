@@ -1,0 +1,145 @@
+/* ---------- banner ---------- */
+#banner__wraper {
+  @include set-size(100%, 1920px, 480px, auto);
+  position: relative;
+  padding-top: 91px;
+}
+
+h1 {
+  @include set-size(100%, auto, 100%, auto);
+  @include position(absolute, $top: 0, $left: 0);
+  display: inline-block;
+  padding-top: 91px;
+  text-align: center;
+  margin: auto;
+  line-height: 480px;
+  z-index: 2;
+  font-family: MicrosoftJhengHei;
+  color: #fff;
+  font-size: 60px;
+}
+
+#banner__img {
+  @include set-size(100%, auto, 100%, auto);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: center/cover url(../img/2.jpg) no-repeat;
+  &:after {
+    @include set-size(100%, null, 100%, null);
+    @include position(absolute, $top: 0, $left: 0);
+    @include pseudo($content: '');
+    background: #000;
+    opacity: 0.3;
+  }
+}
+
+/* ---------- intro ---------- */
+#intro__wraper {
+  @include set-size(100%, 1920px, auto, auto);
+  position: relative;
+  margin: 40px auto;
+}
+
+.intro__texts {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0px 35px;
+}
+
+/* ---------- btn section ---------- */
+#btn__wraper {
+  @include set-size(100%, 1920px, auto, auto);
+  position: relative;
+  margin: 40px auto;
+}
+#btn__order,
+#btn__query {
+  border: none;
+  padding: 65px 80px;
+  color: #3e613d;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+#btn__order {
+  background-color: #a8e8e1;
+}
+
+#btn__query {
+  background-color: #f9f9b5;
+}
+
+#btn__order:hover,
+#btn__query:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- menu ---------- */
+#menu__wraper {
+  @include set-size(100%, 1920px, auto, auto);
+}
+
+#menu__items {
+  @include flex-container(relative, center, center);
+  @include set-size(100%, 1920px, auto, auto);
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.menu__img {
+  margin: 0px;
+  display: inline-block;
+  width: 25%;
+  min-width: 375px;
+}
+
+.menu__img img {
+  @include set-size(100%, auto, 100%, auto);
+}
+
+/* ---------- review ---------- */
+#reviews__box {
+  @include flex-container(relative, center, center);
+  @include set-size(100%, 1920px, auto, auto);
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.reviews__container {
+  width: 28%;
+  min-width: 310px;
+  margin: 50px 10px;
+  padding: 0px 10px 25px 10px;
+  border-radius: 5px;
+  box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+  border: solid 1px #c7e5ec;
+}
+
+.avatars {
+  height: 105px;
+  width: 105px;
+  margin: auto;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.reviews__content {
+  margin-top: -45px;
+}
+
+/* ---------- location ----------- */
+#location__wraper {
+  @include set-size(90%, calc(1920px * 0.9), auto, auto);
+  margin-bottom: 100px;
+}
+iframe {
+  display: block;
+  width: 100%;
+}
+

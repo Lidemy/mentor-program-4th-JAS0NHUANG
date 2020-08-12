@@ -1,5 +1,9 @@
 # 作業
 
+## 備註
+
+請注意！API 每一天會重置一次，在一天當中你做的任何操作都會影響到其他同學。如果你發現有些 id 不見了，那就是被其他同學刪掉了。建議大家要測試刪除功能時，可以先試著新增資料，然後再刪除自己剛剛新增的，才不會影響到其他人，感謝！
+
 ## API 文件
 
 Base URL: https://lidemy-book-store.herokuapp.com
@@ -170,4 +174,3 @@ node twitch.js "Apex Legends"
 這週的作業我們都是使用 `request` 這個 library 來發送 request，但其實 request 這個套件也是使用 Node.js 原生提供的 library。因此，這週的超級挑戰題就是讓你試試看能否不用 request，只用 Node.js 內建的套件來發出 request，並且改寫 `hw2`，改寫成只用原生的 library。
 
 你會使用到的原生套件應該是這個：[https.request(url[, options][, callback])](https://nodejs.org/api/https.html#https_https_request_url_options_callback)，就祝你順利囉！
-
