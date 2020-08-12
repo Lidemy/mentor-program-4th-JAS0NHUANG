@@ -1,47 +1,31 @@
 # 我目前的進度
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
-
 #### 指定教材
-
 額外補充一個影片，英文 ok 的話可以看：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
 
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
-
-也可以先看一下這兩篇文章（很多地方你會看不懂，但沒關係）先培養一下對前端的感覺，等幾週過後當我們學得越來越多，再看一次會有完全不同的感受：[零基礎的小明要如何成為前端工程師？](https://medium.com/hulis-blog/frontend-engineer-guide-297821512f4e)、[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
-
 #### 指定教材
-
 可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
 
 如果覺得課程太理論，想要看比較偏實戰的，可以看 Lidemy 上第四期的「第六週特別補充課程：position 與 display 實戰篇 by minw 助教」相關單元，會有各種切版實戰。
 
 若是還有時間，可以透過這兩個小遊戲來熟悉 CSS Selector 跟 Flexbox 排版的方法：
-
 1. [CSS Diner](https://flukeout.github.io/)
 2. [Flexbox Froggy](http://flexboxfroggy.com/)
 
 如果你覺得切版講得很爛，可以參考看看這個：[金魚都能懂的網頁設計入門 - 金魚都能懂了你還怕學不會嗎](https://ithelp.ithome.com.tw/users/20112550/ironman/2072)
 
-[HW6 作業連結](/homeworks/week6)
-
 #### 自我檢測
 
 - [ ] P1 你知道如何使用有語意的（semantic）標籤
 - [ ] P1 你知道基本 SEO 的概念
-- [ ] P1 你知道 inline、block 跟 inline-block 的區別
-- [ ] P1 你知道什麼是 box model
 - [ ] P1 你知道 position 的所有屬性及其差別
-- [ ] P2 你知道 :hover, :before, :after
 - [ ] P2 你知道 :nth-child 的各種用法
 - [ ] P2 你熟悉 CSS selector，可以輕鬆選到想選到的元素
 
 ### 第七週（07/27 ~ 08/02）：前端基礎 JavaScript
-
-這一週將會進入到 JavaScript，讓網頁變得有互動性，並結合 `<form>` 做表單驗證，以及讓大家寫出簡單的網頁應用程式。
-
-這會是我們第一次把 JavaScript 應用在網頁上，來學習怎麼使用 JavaScript 操控 DOM 物件，讓網頁動起來。
 
 #### 指定教材
 
@@ -64,33 +48,15 @@
 - [ ] P2 你知道怎麼用 JavaScript 更改元素的 style
 - [ ] P2 你知道 preventDefault 與 stopPropagation 的差異 
 
+=======
+>>>>>>> a160e884eec05e2935f2c66f03e1b31a7b800278
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
-
-之前在第四週時有提過 API，也有讓大家試著用 node.js 寫些小程式來串接。
-
-而前端當然也能串接 API，理解前後端如何串接是很重要的一部分，因此這週會花滿多心力再來講 API 串接，讓大家複習一下 API 的概念，並且教大家什麼是 Ajax。
 
 #### 指定教材
 
-把 [FE102] 前端必備：JavaScript 中場總結之後的課程看完。也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
-
-[HW8 作業連結](/homeworks/week8)
-
-#### 自我檢測
-
-- [ ] P1 你知道什麼是 API
-- [ ] P1 你知道什麼是 Ajax
-- [ ] P1 你知道從網頁前端呼叫 API 與在自己電腦上寫程式呼叫的差異
-- [ ] P1 你知道什麼是同源政策（Same-origin policy）
-- [ ] P1 你知道如何存取跨網域的資源（CORS）
-- [ ] P1 你知道什麼是 JSON
-- [ ] P2 你知道什麼是 JSONP 及其原理
+也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
 
 ### 第九週（08/10 ~ 08/16）：後端基礎 PHP 與 MySQL
-
-前端基礎打得差不多以後，就要進入後端的課程，這次課程會以 PHP 為主要的程式語言。
-
-這週的課程會講解 PHP 基本觀念、語法，並且教大家安裝設定 MySQL，寫出簡單的 CRUD 應用。
 
 #### 指定教材
 
@@ -108,9 +74,7 @@
 
 #### 自我檢測
 
-- [ ] P1 你知道 PHP 是什麼
 - [ ] P1 你知道前端與後端的差別
-- [ ] P1 你知道什麼是資料庫
 - [ ] P1 你了解基本的 SQL 語法，包括 Select、Insert Into、Delete 與 Update
 - [ ] P1 你能夠寫出基本的 CRUD 應用
 - [ ] P1 你知道什麼是 Session
@@ -125,8 +89,6 @@
 2. DOM 以及 JavaScript 如何與網頁互動
 3. 前端利用 Ajax 與後端串接
 4. PHP 與 MySQL
-
-這一週可以讓你有時間好好複習之前的內容，若是覺得都 ok 了，也可以試試看之前的進階挑戰題、挑戰題以及超級挑戰。
 
 這次跟第五週一樣，怕大家太無聊，於是準備了兩個有趣的小遊戲給大家玩。
 
