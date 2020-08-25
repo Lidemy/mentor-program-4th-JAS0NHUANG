@@ -1,0 +1,34 @@
+@mixin size(
+  $width: null,
+  $height: null,
+  $max-width: null,
+  $max-height:null
+) {
+  width: $width;
+  height: $height;
+  max-width: $max-width;
+  max-height: $max-height;
+}
+
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin flex(
+  $justify-content: auto,
+  $align-items: auto
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

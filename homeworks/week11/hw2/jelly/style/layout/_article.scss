@@ -1,0 +1,87 @@
+@use '../variables';
+@use '../mixin';
+
+.article {
+  &_wrapper {
+    @include mixin.size($width: 80%, $max-width: 768px);
+    background: variables.$white;
+    margin: auto;
+    padding: 5px;
+    transform: translateY(-45px);
+    z-index: 3;
+  }
+  &_container {
+    @include mixin.size($width: 100%, $max-width: 768px);
+    min-height: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 20px;
+    outline: 5px variables.$white solid;
+    border: 2px variables.$grey solid;
+  }
+  &_container > * {
+    text-align: left;
+    margin: 10px;
+  }
+  &_container > * p {
+    text-align: left;
+    margin: 8px;
+  }
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  &_metadata {
+    @include mixin.flex($justify-content: left, $align-items: center);
+    padding: 5px 20px;
+    background: variables.$light-grey;
+  }
+  &_created {
+    display: inline-block;
+    color: variables.$dark-grey;
+    margin: 0 15px;
+  }
+  &_category {
+    @include mixin.flex($justify-content: left, $align-items: center);
+    color: variables.$dark-grey;
+  }
+  &_excerpt > * {
+    word-break: break-all;
+    text-align: left;
+  }
+  &_read-more {
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 5px;
+    border: 2px solid variables.$grey;
+  }
+}
+
+.cate_icon {
+  @include mixin.size($width: 20px, $height: 20px);
+  background: url("../img/cate.png") center/contain no-repeat;
+  display: inline-block;
+  margin: 3px;
+  opacity: 0.8;
+}
+
+.i18n_btn_wrapper {
+  @include mixin.position(absolute, $right: 0);
+  @include mixin.flex($align-items: center);
+}
+.i18n_btn {
+  font-size: 16px;
+  height: 32px;
+  margin-left: 3px;
+  padding: 0 3px;
+  border: 2px solid variables.$light-grey;
+  background: none;
+  transition: all 0.3s ease-in;
+  &:hover {
+    border: 2px solid variables.$grey;
+    cursor: pointer;
+  }
+}
