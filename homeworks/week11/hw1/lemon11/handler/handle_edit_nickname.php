@@ -14,7 +14,7 @@
     exit();
   }
 
-  $nickname = htmlspecialchars($_POST['nickname']);
+  $nickname = $_POST['nickname'];
 
   $sqlQuery =
     "UPDATE JAS0NHUANG_users SET nickname=? WHERE user_id=?;";

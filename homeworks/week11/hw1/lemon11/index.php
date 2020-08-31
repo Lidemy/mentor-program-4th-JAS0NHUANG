@@ -90,8 +90,10 @@
         }
         $sqlQuery = 
           'SELECT * FROM JAS0NHUANG_posts '.
+          'LEFT JOIN JAS0NHUANG_users '.
+          'ON JAS0NHUANG_posts.user_id = JAS0NHUANG_users.user_id '.
           'WHERE is_deleted IS NULL '.
-          'ORDER BY created_at DESC '. 
+          'ORDER BY JAS0NHUANG_posts.created_at DESC '. 
           'limit ? offset ?;';
         $stmt = $conn->prepare($sqlQuery);
         $stmt->bind_param('ii', $limit, $offset);
@@ -102,8 +104,8 @@
         }
 
         while ($row = $result->fetch_assoc()) {
-          $nickname = escape(getUserInfo($row['user_id'])['nickname']);
-          $username = escape(getUserInfo($row['user_id'])['username']);
+          $nickname = escape($row['nickname']);
+          $username = escape($row['username']);
           $user_id = escape($row['user_id']);
           $post_content = escape($row['post_content']);
           $created_at = escape($row['created_at']);

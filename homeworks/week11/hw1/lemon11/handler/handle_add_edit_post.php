@@ -24,7 +24,7 @@
   if (empty($_POST['content'])) {
     die('Please enter message.');
   }
-  $post_content = htmlspecialchars($_POST['content']);
+  $post_content = $_POST['content'];
   
   // if post_id exist
   if ($_POST['post_id']) {
