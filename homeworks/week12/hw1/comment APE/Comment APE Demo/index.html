@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Comment APE Tester</title>
+</head>
+<body>
+
+<div class="container-sm pt-3 mb-5 col-12 col-sm-9 col-md-7 col-lg-6 col-xl-5">
+  <form id="comment_ape" class="rounded p-4 shadow">
+    <div class="form-group">
+      <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control" id="comment" rows="2" placeholder="Comment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+  </form>
+
+  <div class="comments containner-sm pt-3">
+  </div>
+  <button class="load_more btn btn-secondary btn-block">Load More</button>
+  <button class="back_to_top btn btn-light btn-block">Top</button>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./javascript/comment_ape.js"></script>
+</body>
+</html>
