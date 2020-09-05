@@ -1,0 +1,16 @@
+@use '../variables';
+@use '../mixin';
+
+.footer {
+  @include mixin.size($width: 100%);
+  @include mixin.position(relative, $top:70px);
+  margin-top: 30px;
+  color: variables.$light-grey;
+  &_wrapper {
+  @include mixin.size($width: 100%, $max-width: 1440px);
+  margin: auto;
+  padding: 10px 0;
+  background:variables.$dark-grey;
+  }
+}
+

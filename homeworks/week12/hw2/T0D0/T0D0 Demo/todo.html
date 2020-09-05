@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title># T0D0</title>
+  <link rel="stylesheet" href="./style/todo.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+  <script src="./javascript/load_saved.js"></script>
+  <script src="./javascript/todo.js"></script>
+  <script src="./javascript/navBar.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="todo">
+      <div class="todo__header">
+        <div class="todo__title">
+          # T0D0
+        </div>
+        <nav class="todo__options">
+          <ul>
+            <li>
+              <div class="todo__all">ALL</div>
+            </li>
+            <span> | </span>
+            <li>
+              <div class="todo__active">ACTIVE</div>
+            </li>
+            <span> | </span>
+            <li>
+              <div class="todo__completed">COMPLETED</div>
+            </li>
+            <span> | </span>
+            <li>
+              <div class="todo__clear">CLEAR COMPLETED</div>
+            </li>
+            <span> | </span>
+            <li>
+              <div class="todo__save">SAVE LIST</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    
+    <div class="todo__add">
+      <form class="todo__add__form" action="">
+        <input 
+          name="todo__add__input"
+          class="todo__add__input"
+          type="text" 
+          placeholder="What to do?" 
+          autofocus
+        >
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>

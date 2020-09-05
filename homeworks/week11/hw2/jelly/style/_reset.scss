@@ -1,0 +1,39 @@
+@use './variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$light-black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.archive {
+  margin: 20px auto;
+}
+
+.category_name {
+  margin: 20px 0;
+  padding: 10px;
+  background: variables.$light-grey;
+}
+
+.hide {
+  opacity:0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in;
+}
+
+.warning {
+  color: variables.$warning;
+}

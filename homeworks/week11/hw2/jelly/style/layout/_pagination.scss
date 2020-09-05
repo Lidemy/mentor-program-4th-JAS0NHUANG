@@ -1,0 +1,13 @@
+@use '../variables';
+@use '../mixin';
+
+.pagination {
+  @include mixin.position(relative, $top: 70px);
+  &_controller {
+    @include mixin.flex($align-items: center, $justify-content: center);
+    & > a {
+      border: 2px solid variables.$light-grey;
+      margin: 5px;
+    }
+  }
+}
