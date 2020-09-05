@@ -1,0 +1,21 @@
+.editor_form {
+  background: #fff;
+  width: 100%;
+  max-width: 768px;
+  outline: 5px solid #fff;
+  border: 2px solid #aaa;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+  transform: translateY(-40px);
+  &_title {
+    text-align: left;
+    width: 80%;
+  }
+  & > * {
+    margin: 20px auto 20px auto;
+  }
+}
+
+
+

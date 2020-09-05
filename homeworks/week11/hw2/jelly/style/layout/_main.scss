@@ -1,0 +1,8 @@
+@use '../mixin';
+
+.main {
+  @include mixin.size($width: 100%, $max-width: 1440px);
+  @include mixin.position(relative, $top:70px);
+  min-height: calc(100vh - 380px);
+  margin: 10px auto;
+}
