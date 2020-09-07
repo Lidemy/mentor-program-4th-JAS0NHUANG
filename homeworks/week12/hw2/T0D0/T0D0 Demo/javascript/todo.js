@@ -37,6 +37,19 @@ $(document).ready(() => {
     $('.todo__add__input').val('')
   })
 
+  let isLineThrough = false
+  todoList.delegate('.todo__content', 'click', event => {
+    isLineThrough = $(event.target).hasClass('line-through')
+    let content = $(event.target).text()
+    $(event.target).replaceWith(`<input class="todo__edit" value=${content}>`)
+    $('.todo__edit').focus()
+  })
+
+  todoList.delegate('.todo__edit', 'focusout', event=>{
+    let content = $('.todo__edit').val()
+    $(event.target).replaceWith(`<div class="todo__content ${ isLineThrough ? 'line-through' : '' }">${content}</div>`)
+  })
+
   todoList.delegate('.todo__check-box', 'click', event => {
     if ($(event.target).hasClass('checked')) {
       $(event.target).html('-[ ]')
