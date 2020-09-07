@@ -66,6 +66,15 @@ body {
     word-wrap: anywhere;
     white-space: pre-wrap;
   }
+  &__edit {
+    text-align: left;
+    flex-grow: 1;
+    flex-shrink: 1;
+    word-wrap: anywhere;
+    white-space: pre-wrap;
+    background: #999;
+    color: #fff;
+  }
   &__delete {
     cursor: pointer;
     min-width: 30px;
@@ -73,7 +82,7 @@ body {
   &__add__form {
     margin-top: 8px;
     padding: 0 20px;
-    background: #aaa;
+    background: #999;
   }
   &__add__input {
     color: #fff;
@@ -94,7 +103,7 @@ body {
 }
 
 .completed {
-  color: #aaa;
+  color: #999;
 }
 
 .line-through {
