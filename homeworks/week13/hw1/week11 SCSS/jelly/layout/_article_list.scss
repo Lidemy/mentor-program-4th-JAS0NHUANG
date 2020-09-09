@@ -1,0 +1,37 @@
+@use '../variables';
+@use '../mixin';
+
+.article_list {
+  @include mixin.size($width: 80%, $max-width: 768px);
+  background: variables.$white;
+  margin: auto;
+  padding: 5px;
+  z-index: 3;
+  &_container {
+    @include mixin.size($width: 100%, $max-width: 768px);
+    @include mixin.flex($justify-content: space-between, $align-items: center);
+    margin-bottom: 10px;
+    padding: 20px;
+    outline: 5px variables.$white solid;
+    border: 2px variables.$grey solid;
+  }
+  &_title {
+    word-break: break-all;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  &_edit {
+    @include mixin.size($width: 20px, $height: 20px);
+    cursor: pointer;
+    border: none;
+    margin: 3px;
+    background: url('../img/edit.png') center/contain no-repeat;
+  }
+  &_delete {
+    @include mixin.size($width: 20px, $height: 20px);
+    cursor: pointer;
+    border: none;
+    margin: 3px;
+    background: url('../img/delete.png') center/contain no-repeat;
+  }
+}
