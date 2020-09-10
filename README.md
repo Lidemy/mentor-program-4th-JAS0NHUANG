@@ -1,15 +1,13 @@
 # 我目前的進度
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
-#### 指定教材
-額外補充一個影片，英文 ok 的話可以看：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似，只是讓大家再做個複習
-
+額外補充一個影片：[CS75 (Summer 2012) Lecture 0 HTTP Harvard Web Development David Malan](https://www.youtube.com/watch?v=8KuO4r5CHjM)，內容與 NET101 類似
 
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
 #### 指定教材
 可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
 
-如果覺得課程太理論，想要看比較偏實戰的，可以看 Lidemy 上第四期的「第六週特別補充課程：position 與 display 實戰篇 by minw 助教」相關單元，會有各種切版實戰。
+「第六週特別補充課程：position 與 display 實戰篇 by minw 助教」相關單元，會有各種切版實戰。
 
 若是還有時間，可以透過這兩個小遊戲來熟悉 CSS Selector 跟 Flexbox 排版的方法：
 1. [CSS Diner](https://flukeout.github.io/)
@@ -39,8 +37,6 @@
 
 - [ ] P1 你知道 JavaScript 跑在網頁上跟跑在 Node.js 上差在哪裡
 - [ ] P1 你知道 DOM 是什麼
-- [ ] P2 你知道怎麼用 JavaScript 更改元素的 style
-- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異 
 
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 
@@ -87,8 +83,6 @@
 3. Gulp
 4. Webpack
 
-主要是想讓大家稍微知道這些工具的使用而已，在之後的課程裡面不一定會實際用到。
-
 除了這個以外，也會幫大家額外補充一些重要的概念，像是：
 
 1. 什麼是 Promise？
@@ -108,8 +102,6 @@
 
 可以看 [FE201] 前端中階：那些前端會用到的工具們來學習這週的工具，這週會把上週沒學到的 CSS 預處理器、Babel、gulp 跟 webpack 都學完。
 
-再次強調，對於這些工具，只要稍微知道怎麼使用即可，想深入研究的話再深入研究就好，我只想讓大家知道這些工具出現的意義還有要解決的問題而已。
-
 關於 webpack，看完課程或是看課程之前都可以參考這篇文章：[webpack 新手教學之淺談模組化與 snowpack](https://blog.huli.tw/2020/01/21/webpack-newbie-tutorial/)。
 
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
@@ -126,11 +118,9 @@
 
 #### 自我檢測
 
-- [ ] P1 你知道 webpack 的目的以及原理
 - [ ] P1 你熟悉如何使用 webpack 進行模組化開發
 - [ ] P1 你知道如何使用 Promise
 - [ ] P2 你知道如何使用 fetch
-- [ ] P2 你知道 gulp 的目的以及原理
 - [ ] P2 你知道 CSS Sprites 與 Data URI 的優缺點
 - [ ] P2 你知道什麼是 uglify 與 minify
 - [ ] P3 你熟悉如何使用 gulp 建構自動化工作流程
@@ -138,17 +128,11 @@
 
 ### 第十四週（09/14 ~ 09/20）：伺服器與網站部署
 
-有了自己的前後端程式之後，就可以開始來部署了。這週的重點會放在帶大家直接去買主機（[AWS](https://aws.amazon.com/tw/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)、[Digital Ocean](https://m.do.co/c/2e78666c0866)、[GCP](https://cloud.google.com/free?hl=zh-tw)、Linode），並且了解如何連上主機。
+買主機（[AWS](https://aws.amazon.com/tw/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)、[Digital Ocean](https://m.do.co/c/2e78666c0866)、[GCP](https://cloud.google.com/free?hl=zh-tw)、Linode），並且了解如何連上主機。
 
-關於主機的部分，想要用哪一家的都可以，AWS 有一年免費的方案，GCP 則是部分服務沒有超過用量就免費，其他的應該都是要付費的。
+購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
 
-也會讓大家購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
-
-這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(_ _)>。
-
-第四期學生請找助教索取網域的折扣碼（每人限一個），可以用來註冊 .tw 的域名。
-
-除此之外，也會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。
+會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。
 
 #### 指定教材
 
