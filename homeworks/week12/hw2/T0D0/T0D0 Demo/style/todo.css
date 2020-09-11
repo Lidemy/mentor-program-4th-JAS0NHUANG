@@ -67,6 +67,15 @@ body {
   word-wrap: anywhere;
   white-space: pre-wrap;
 }
+.todo__edit {
+  text-align: left;
+  flex-grow: 1;
+  flex-shrink: 1;
+  word-wrap: anywhere;
+  white-space: pre-wrap;
+  background: #999;
+  color: #fff;
+}
 .todo__delete {
   cursor: pointer;
   min-width: 30px;
@@ -74,7 +83,7 @@ body {
 .todo__add__form {
   margin-top: 8px;
   padding: 0 20px;
-  background: #aaa;
+  background: #999;
 }
 .todo__add__input {
   color: #fff;
@@ -94,7 +103,7 @@ body {
 }
 
 .completed {
-  color: #aaa;
+  color: #999;
 }
 
 .line-through {

@@ -8,9 +8,18 @@ $(document).ready(() => {
     $.get(
       `${t0d0_api_URL}get_T0D0_api.php?list_id=${list_id}`,
       data => {
-        $('.todo').append(data.todos.list_content)
+        const listContent = data.todos.list_content
+        for (const i in listContent) {
+          const isC = listContent[i].isCompleted
+          $('.todo').append(
+            `<div class="todo__wrapper ${isC ? 'completed' : ''}">
+            <div class="todo__check-box ${isC ? 'checked' : ''}"> -[${isC ? 'X' : ' '}] </div>
+            <div class="todo__content ${isC ? 'line-through' : ''}">${escapeHtml(listContent[i].todoContent)}</div>
+            <div class="todo__delete"> X </div>
+          </div>`
+          )
+        }
         const selected_tab = `.${data.todos.selected_tab}`
-        $(selected_tab).addClass('selected')
       })
   }
 })

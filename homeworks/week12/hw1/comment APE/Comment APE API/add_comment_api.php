@@ -21,7 +21,7 @@
     giveResponse(4, "Please input your comment.");
   }
 
-  $site_name = htmlspecialchars($_POST['site_name']);
+  $site_name = $_POST['site_name'];
   $content = $_POST['content'];
   
   if (empty($_POST['nickname'])) {
