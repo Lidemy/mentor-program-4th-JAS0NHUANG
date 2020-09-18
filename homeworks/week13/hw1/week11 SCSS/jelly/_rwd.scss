@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    &_wrapper {
+      height:auto;
+      display: block;
+      ul, li {
+        margin: 0;
+      } 
+    } 
+  }
+  .article_wrapper {
+    width: 100%;
+  }
+}

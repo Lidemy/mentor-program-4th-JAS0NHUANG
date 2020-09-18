@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "css-loader": "^4.2.2",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.5.1",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
