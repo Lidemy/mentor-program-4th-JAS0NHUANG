@@ -6,17 +6,13 @@
 ### 第六週（07/20 ~ 07/26）：前端基礎 HTML 與 CSS
 #### 指定教材
 可以看 [Chrome 網頁除錯功能大解密](https://www.udemy.com/chrome-devtools/)來熟悉 Chrome devtool 的使用方式。
-
 「第六週特別補充課程：position 與 display 實戰篇 by minw 助教」相關單元，會有各種切版實戰。
-
 若是還有時間，可以透過這兩個小遊戲來熟悉 CSS Selector 跟 Flexbox 排版的方法：
 1. [CSS Diner](https://flukeout.github.io/)
-2. [Flexbox Froggy](http://flexboxfroggy.com/)
-
+2. [Flexbox Froggy](http://flexboxfroggy.com/)  
 如果你覺得切版講得很爛，可以參考看看這個：[金魚都能懂的網頁設計入門 - 金魚都能懂了你還怕學不會嗎](https://ithelp.ithome.com.tw/users/20112550/ironman/2072)
 
 #### 自我檢測
-
 - [ ] P1 你知道如何使用有語意的（semantic）標籤
 - [ ] P1 你知道基本 SEO 的概念
 - [ ] P1 你知道 position 的所有屬性及其差別
@@ -24,100 +20,62 @@
 - [ ] P2 你熟悉 CSS selector，可以輕鬆選到想選到的元素
 
 ### 第七週（07/27 ~ 08/02）：前端基礎 JavaScript
-
 #### 指定教材
-
 針對 DOM 的事件傳遞，可以參考這一篇：[DOM 的事件傳遞機制：捕獲與冒泡](https://blog.techbridge.cc/2017/07/15/javascript-event-propagation/)
-
 另外附增一個好用的網站：https://htmldom.dev/
 
-[HW7 作業連結](/homeworks/week7)
-
 #### 自我檢測
-
 - [ ] P1 你知道 JavaScript 跑在網頁上跟跑在 Node.js 上差在哪裡
 - [ ] P1 你知道 DOM 是什麼
 
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
-
 #### 指定教材
-
 也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
 
 ### 第九週（08/10 ~ 08/16）：後端基礎 PHP 與 MySQL
-
-
 2. [淺談 Session 與 Cookie：一起來讀 RFC](https://blog.huli.tw/2019/08/09/session-and-cookie-part2/)
 3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)  
 
-
-[HW9 作業連結](/homeworks/week9)
-
 #### 自我檢測
-
-- [ ] P1 你知道前端與後端的差別
 - [ ] P1 你知道什麼是 Session
 - [ ] P1 你知道什麼是 Cookie
 - [ ] P1 你知道 Session 與 Cookie 的差別
 
 ### 第十一週（08/24 ~ 08/30）：資訊安全
-
 ####  指定教材
-[BE101] 有時間的話也可以把整堂課都看完。
-
+[BE101] 有時間的話可以把整堂課都看完。
 想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0) （有時間再看）
-
 有一個與資安相關的東西叫做 CSRF，在課程中沒有講，是考驗你自學能力的時候，推薦閱讀這篇：[讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
-
-[HW11 作業連結](/homeworks/week11)
 
 #### 自我檢測
 - [ ] P1 你知道為什麼儘管前端做了驗證，後端還是要再做一次驗證
 - [ ] P2 你知道什麼是 CSRF 以及如何防範
 
 ### 第十三週（09/07 ~ 09/13）：現代前端工具
-
 這週基本上是延續上週的課程，介紹簡單好用的現代前端工具，包括：
-
 2. Babel
 3. Gulp
 4. Webpack
-
 除了這個以外，也會幫大家額外補充一些重要的概念，像是：
-
-1. 什麼是 Promise？
-2. 什麼是 Fetch？
-
-在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：
-
-1. CSS Selector 權重的計算方式
-2. CSS Sprites 與 Data URI
-
-總而言之呢，這週的東西可能會比較雜一點，但主要可以分成兩個部分：
-
-1. 前端工具
-2. JS 與 CSS 補充概念
+1. 什麼是 Promise？  
+2. 什麼是 Fetch？  
+在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：  
+1. CSS Selector 權重的計算方式  
+2. CSS Sprites 與 Data URI  
 
 #### 指定教材
-
 可以看 [FE201] 前端中階：那些前端會用到的工具們來學習這週的工具，這週會把上週沒學到的 CSS 預處理器、Babel、gulp 跟 webpack 都學完。
-
 關於 webpack，看完課程或是看課程之前都可以參考這篇文章：[webpack 新手教學之淺談模組化與 snowpack](https://blog.huli.tw/2020/01/21/webpack-newbie-tutorial/)。
+課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。  
 
-課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
-
-其他的補充如下：
-
+其他的補充如下：  
 1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
 2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
 3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
 4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
 5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
 
-[HW13 作業連結](/homeworks/week13)
-
-#### 自我檢測
-
+#### 自我檢測  
 - [ ] P1 你熟悉如何使用 webpack 進行模組化開發
 - [ ] P1 你知道如何使用 Promise
 - [ ] P2 你知道如何使用 fetch
@@ -126,50 +84,26 @@
 - [ ] P3 你熟悉如何使用 gulp 建構自動化工作流程
 - [ ] P3 你知道 CSS 優化的一些小技巧
 
-### 第十四週（09/14 ~ 09/20）：伺服器與網站部署
+### 第十四週（09/14 ~ 09/20）：伺服器與網站部署  
+會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。  
 
-買主機（[AWS](https://aws.amazon.com/tw/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)、[Digital Ocean](https://m.do.co/c/2e78666c0866)、[GCP](https://cloud.google.com/free?hl=zh-tw)、Linode），並且了解如何連上主機。
-
-購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
-
-會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。
-
-#### 指定教材
-
-這週最重要的就是部署自己的網站，這邊會希望大家自己先查資料，試試看能不能靠自己就部署成功，目標是把你之前的 PHP 網站放到自己的主機上，並且連 MySQL 都一起建好。
-
-若是不行的話，請參考以下幾篇，或者是自行搜尋相關資訊：
-
+#### 指定教材  
+請參考以下幾篇，或者是自行搜尋相關資訊：  
 1. [部署 AWS EC2 遠端主機 + Ubuntu LAMP 環境 + phpmyadmin](https://github.com/Lidemy/mentor-program-2nd-yuchun33/issues/15)
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
-3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
-
-接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
-
-然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
-
+3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)  
+接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。  
+然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。  
 最後是系統架構，可以稍微看一下：[CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan](https://www.youtube.com/watch?v=-W9F__D3oY4)
 
-[HW14 作業連結](/homeworks/week14)
-
-#### 自我檢測
-
-- [ ] P1 你知道虛擬空間、虛擬主機以及實體主機的差別
-- [ ] P1 你知道什麼是網域（Domain）
-- [ ] P1 你知道如何設定網域（A、CNAME）
-- [ ] P1 你知道如何用 SSH 遠端連線到自己的主機
-- [ ] P1 你知道如何部署應用程式
+#### 自我檢測  
 - [ ] P2 你知道什麼是 No SQL
-- [ ] P2 你知道什麼是 Transaction 與 lock
-- [ ] P2 你知道資料庫的 ACID 是什麼
 - [ ] P3 你知道什麼是資料庫的 View 以及使用時機
 - [ ] P3 你知道什麼是 Stored procedure 以及如何使用
 - [ ] P3 你知道資料庫的 Trigger 以及使用時機
 
 ### 第十五週（09/21 ~ 09/27）：複習週
-
-終於到了第三次的複習週，這次要複習的東西比以往都多了點：
-
+終於到了第三次的複習週，這次要複習的東西比以往都多了點：  
 1. Session 與 Cookie 的差異
 2. 資訊安全（Hashing、SQL Injection、XSS）
 3. jQuery
@@ -177,10 +111,8 @@
 5. CSS 預處理器、Webpack
 6. 部署
 
-這一週的作業除了心得以外，也提供了一個跟以往不太一樣的測驗：[網站前後端開發基礎測試](https://github.com/Lidemy/mentor-program-3rd/issues/5)，一共十題簡答題，答案預設是隱藏的，自己答完之後可以自己點開對答案。
 
-另外，這週會幫大家補充瀏覽器運作的相關知識，可以參考這一系列的文章：
-
+另外，這週會幫大家補充瀏覽器運作的相關知識，可以參考這一系列的文章：  
 1. [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
 2. [中譯版](https://juejin.im/post/6844903679389073415)，其他 part 請自行搜尋
 
