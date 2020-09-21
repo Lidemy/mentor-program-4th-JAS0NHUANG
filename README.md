@@ -24,10 +24,6 @@
 針對 DOM 的事件傳遞，可以參考這一篇：[DOM 的事件傳遞機制：捕獲與冒泡](https://blog.techbridge.cc/2017/07/15/javascript-event-propagation/)
 另外附增一個好用的網站：https://htmldom.dev/
 
-#### 自我檢測
-- [ ] P1 你知道 JavaScript 跑在網頁上跟跑在 Node.js 上差在哪裡
-- [ ] P1 你知道 DOM 是什麼
-
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 #### 指定教材
 也可以看這一篇增進自己對 Ajax 的理解：[輕鬆理解 Ajax 與跨來源請求](https://blog.techbridge.cc/2017/05/20/api-ajax-cors-and-jsonp/)
@@ -60,7 +56,6 @@
 1. 什麼是 Promise？  
 2. 什麼是 Fetch？  
 在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：  
-1. CSS Selector 權重的計算方式  
 2. CSS Sprites 與 Data URI  
 
 #### 指定教材
@@ -85,10 +80,7 @@
 - [ ] P3 你知道 CSS 優化的一些小技巧
 
 ### 第十四週（09/14 ~ 09/20）：伺服器與網站部署  
-會稍微提到一些系統架構，還有跟資料庫的一些知識，像是 ACID、Transaction、View 以及 Stored procedure 等等，這些專有名詞的重要性是 P2 與 P3，只要稍微聽過有個印象就好。  
-
 #### 指定教材  
-請參考以下幾篇，或者是自行搜尋相關資訊：  
 1. [部署 AWS EC2 遠端主機 + Ubuntu LAMP 環境 + phpmyadmin](https://github.com/Lidemy/mentor-program-2nd-yuchun33/issues/15)
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
 3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
@@ -102,24 +94,14 @@
 最後是系統架構，可以稍微看一下：[CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan](https://www.youtube.com/watch?v=-W9F__D3oY4)
 
 #### 自我檢測  
-- [ ] P2 你知道什麼是 No SQL
 - [ ] P3 你知道什麼是資料庫的 View 以及使用時機
 - [ ] P3 你知道什麼是 Stored procedure 以及如何使用
 - [ ] P3 你知道資料庫的 Trigger 以及使用時機
 
 ### 第十五週（09/21 ~ 09/27）：複習週
-終於到了第三次的複習週，這次要複習的東西比以往都多了點：  
-1. Session 與 Cookie 的差異
-2. 資訊安全（Hashing、SQL Injection、XSS）
-3. jQuery
-4. Bootstrap
-5. CSS 預處理器、Webpack
-6. 部署
-
 
 另外，這週會幫大家補充瀏覽器運作的相關知識，可以參考這一系列的文章：  
 1. [Inside look at modern web browser (part 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
-2. [中譯版](https://juejin.im/post/6844903679389073415)，其他 part 請自行搜尋
 
 看完以後可以看我之前對這些文章的導讀：[瀏覽器運作導讀](https://youtu.be/5iaNYpVedIU?t=2432)
 
@@ -127,7 +109,7 @@
 
 ### 第十六週（09/28 ~ 10/04）：JavaScript 核心與物件導向
 
-這次的第一個重點在於物件導向，之前都沒有時間好好講過，這一週特別講一下物件導向。
+這一週特別講一下物件導向。
 
 再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制，這邊有兩個地方要特別注意。
 
