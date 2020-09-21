@@ -1,0 +1,16 @@
+@use '../variables';
+@use '../mixin';
+
+.banner {
+  @include mixin.position(relative, $top:70px);
+  width: 100%;
+  &_wrapper {
+    @include mixin.size($width: 100%, $height: 240px, $max-width: 1440px);
+    background: url("../img/jelly_banner.JPG") center/cover no-repeat;
+    margin: 0 auto;
+    color: variables.$light-grey;
+  } 
+  &_title {
+    line-height: 240px;
+  }
+}

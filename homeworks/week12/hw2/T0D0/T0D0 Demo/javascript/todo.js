@@ -61,6 +61,13 @@ $(document).ready(() => {
     $(event.target).next().toggleClass('line-through')
   })
   todoList.delegate('.todo__delete', 'click', event => {
-    $(event.target).parent().fadeOut()
+    // 將 event.target 的 parent 存進變數
+    const todoItem = $(event.target).parent()
+    // 網上查到，fade out 之後再刪除的方法（沒辦法直接 .fadeOut().remove()）
+    // 一定要 remove 元素才會真的被刪除，fade out 只是讓元素 bang 不見 XD
+    // 感謝 ahwei777 同學幫忙抓蟲
+    todoItem.fadeOut('normal', () => {
+      todoItem.remove()
+    })
   })
 })

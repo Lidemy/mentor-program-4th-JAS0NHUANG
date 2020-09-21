@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Comment APE Tester</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      commentAPEPlugin.init({
+        site_name : 'aaa',
+        api_URL : 'http://mentor-program.co/mtr04group6/JAS0NHUANG/comment%20APE/Comment%20APE%20API/',
+        ape_division : '.ape_division-a'
+      })
+
+      commentAPEPlugin.init({
+        site_name : 'ccc',
+        api_URL : 'http://mentor-program.co/mtr04group6/JAS0NHUANG/comment%20APE/Comment%20APE%20API/',
+        ape_division : '.ape_division-c'
+      })
+
+    })
+  </script>
+
+</head>
+<body>
+
+  <div class="ape_division-a"></div>
+  <div class="ape_division-c"></div>
+  
+  <script src="./commentAPE/dist/main.js"></script>
+</body>
+</html>
