@@ -49,27 +49,13 @@
 - [ ] P2 你知道什麼是 CSRF 以及如何防範
 
 ### 第十三週（09/07 ~ 09/13）：現代前端工具
-這週基本上是延續上週的課程，介紹簡單好用的現代前端工具，包括：
-2. Babel
-3. Gulp
-4. Webpack
-除了這個以外，也會幫大家額外補充一些重要的概念，像是：
-1. 什麼是 Promise？  
-2. 什麼是 Fetch？  
+
 在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：  
 2. CSS Sprites 與 Data URI  
 
 #### 指定教材
-可以看 [FE201] 前端中階：那些前端會用到的工具們來學習這週的工具，這週會把上週沒學到的 CSS 預處理器、Babel、gulp 跟 webpack 都學完。
 關於 webpack，看完課程或是看課程之前都可以參考這篇文章：[webpack 新手教學之淺談模組化與 snowpack](https://blog.huli.tw/2020/01/21/webpack-newbie-tutorial/)。
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。  
-
-其他的補充如下：  
-1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
-2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
-3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
-4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
-5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
 
 #### 自我檢測  
 - [ ] P1 你熟悉如何使用 webpack 進行模組化開發
@@ -81,23 +67,8 @@
 - [ ] P3 你知道 CSS 優化的一些小技巧
 
 ### 第十四週（09/14 ~ 09/20）：伺服器與網站部署  
-#### 指定教材  
-1. [部署 AWS EC2 遠端主機 + Ubuntu LAMP 環境 + phpmyadmin](https://github.com/Lidemy/mentor-program-2nd-yuchun33/issues/15)
-2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
-3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
-4. [[紀錄] 部屬 AWS EC2 雲端主機 + LAMP Server + phpMyAdmin](https://mtr04-note.coderbridge.io/2020/09/15/-%E7%B4%80%E9%8C%84-%08-%E9%83%A8%E5%B1%AC-aws-ec2-%E9%9B%B2%E7%AB%AF%E4%B8%BB%E6%A9%9F-/)
-5. [AWS EC2 佈署網站：卡關記錄](https://nicolakacha.coderbridge.io/2020/09/16/launch-website/)
-
-接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
-
-然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
 
 最後是系統架構，可以稍微看一下：[CS75 (Summer 2012) Lecture 9 Scalability Harvard Web Development David Malan](https://www.youtube.com/watch?v=-W9F__D3oY4)
-
-#### 自我檢測  
-- [ ] P3 你知道什麼是資料庫的 View 以及使用時機
-- [ ] P3 你知道什麼是 Stored procedure 以及如何使用
-- [ ] P3 你知道資料庫的 Trigger 以及使用時機
 
 ### 第十五週（09/21 ~ 09/27）：複習週
 
@@ -116,11 +87,7 @@
 
 第一個是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
 
-第二個是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
-
 #### 指定教材
-
-1. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
 2. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 可以搭配其他我寫的文章一起閱讀：
@@ -132,8 +99,6 @@
 5. [淺談 JavaScript 頭號難題 this：絕對不完整，但保證好懂](https://blog.huli.tw/2019/02/23/javascript-what-is-this/)
 6. [JavaScript 中的同步與非同步（上）：先成為 callback 大師吧！](https://blog.huli.tw/2019/10/04/javascript-async-sync-and-callback/)
 7. [覺得 JavaScript function 很有趣的我是不是很奇怪](https://blog.huli.tw/2020/04/18/javascript-function-is-awesome/)
-
-如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk) （內容有很多應該都該 JS201 類似，所以有時間再看就好，沒看也沒關係）
 
 物件導向的地方我自己沒有很熟，所以還在探索怎麼教會比較好，這邊有兩個第二期的影片，會用 PHP 跟 JavaScript 當範例。會用 PHP 是因為 JS 中的物件導向並不完整，而 PHP 的完整許多，但要注意影片中會在 PHP 跟 JS 中切換，建議大家只需要了解一些基本概念即可，不需要執著於一定要完全搞懂物件導向：
 
