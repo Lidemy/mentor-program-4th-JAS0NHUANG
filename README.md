@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 我目前的進度
 
 ### 第四週（07/06 ~ 07/12）：網路基礎
@@ -157,7 +158,7 @@
 
 [Express](https://expressjs.com/) 是可以在 Node.js 環境下執行的輕量後端框架，自由度極高，也能夠快速開發出後端應用程式。
 
-跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不的寫法。
+跟其他有完整 MVC 架構的框架相比，Express 其實鬆散（或者說自由）很多，許多地方並沒有強制規範，都只是按照前人的方法或者是慣例來實踐，十個人可能會有十種不同的寫法。
 
 有了之前 PHP 以及 JS 的基礎，我相信學習 Express 會快速許多，因此在這一週裡面可以試試看能不能快速上手 Express 並完成作業。
 
@@ -165,11 +166,11 @@
 
 而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
 
-最後會把這週的專案部署到免費的空間 [Heroku](https://www.heroku.com/)
+最後會把這週的專案部署到免費的空間 [Heroku](https://www.heroku.com/)或是自己的主機（nginx + PM2）。
 
 #### 指定教材：
 
-1. [BE201] Express 與 Sequelize：看到「ORM 與 Sequelize」結束
+1. [BE201] Express 與 Sequelize：全部
 
 [HW17 作業連結](/homeworks/week17)
 
@@ -184,17 +185,15 @@
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
 
-上一週我們已經把基礎的 Express + Sequelize 都搞定了，這一週就是延續上一週的基礎，開始幫餐廳網站加上訂單相關的功能。
+上週已經熟悉的基本的 Express + Sequelize 開發，而這一週我們會把之前做的餐廳網站移植過來 Express，並且加入後台的功能，讓我們可以有一個相對完整的專案。
 
-這週一樣會提供一步步帶著做的教學，讓大家跟著我一起把餐廳網站最後一塊拼圖拼起來。不過如果你想挑戰自己，可以先試著不要看教學，試著自己做出來看看。
+這週會做的東西主要有：
 
-這一週要完成的功能如下：
+1. 移植餐廳網站
+2. 新增餐廳後台，管理菜單
+3. 新增餐廳後台，管理常見問題
 
-1. 身為一個使用者，我想要輸入訂單編號並且查詢訂單狀態
-2. 身為一個管理員，我想要在後台看到所有訂單
-3. 身為一個管理員，我想要在後台能夠改變訂單的狀態
-
-上周教了怎麼把專案部署到 Heroku，而這週會使用 Nginx + PM2 來部署我們寫好的 Web Application。
+這週大致上需要用到的東西在上一週都學到了，核心概念跟上一週沒有什麼差，如果你有時間壓力的話，可以跳過這一週的作業。
 
 #### 指定教材
 
@@ -215,9 +214,11 @@
 
 這一週會帶大家看看學習系統在開發新功能時的一些記錄，讓大家看看產品開發流程會長什麼樣子。
 
-除了產品開發流程以外，這週也會帶大家練習全新的思考模式，並且做一個簡單的前端框架出來，幫以後的學習鋪路。
+然後這一週的作業呢，就是讓大家有充足的時間來規劃一下自己之後期末專案想要開發什麼樣的產品。
 
 #### 指定教材
+
+1. [PD101] 淺談產品開發與工作流程：全部
 
 [HW19 作業連結](/homeworks/week19)
 
@@ -245,22 +246,39 @@
 
 ### 第二十一週（11/02 ~ 11/08）：前端框架（一）
 
+備註：大家可以把 week21、22 當作一組，week 23、24 當作一組，因為 React 的地方比較難切，而且一週的時間我覺得不太夠，所以可以用兩週把課程完整看完再把作業一起寫完，可能會比較容易一些。
+
 終於要進入到前端框架 React 了（雖然嚴格來說 React 並不是一個框架，但搭配其他各種 React 生態系成員，其實就算是一個框架了）。
 
 這週會學習到 React 的基本應用以及原理，了解為什麼我們需要使用 React。
 
-延伸閱讀：[React 性能優化大挑戰：一次理解 Immutable data 跟 shouldComponentUpdate](https://blog.techbridge.cc/2018/01/05/react-render-optimization/)
-
 指定教材：
 
-1. [FE301] React 基礎：全部
-2. 程式導師實驗計畫第二期：Week12-1 React
-3. 程式導師實驗計畫第二期：Week12-2 React 續
-4. [官方教學](https://reactjs.org/tutorial/tutorial.html)
-5. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
+React 的核心概念之一叫做 component，要寫出這個 component 有兩種方式，一個是透過 class，一個是透過 function，前者就叫做 class component，後者叫做 function component。
 
+React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動，那就是多了一個東西叫做 hooks，讓 function component 也能擁有 state。
 
-[HW21 作業連結](/homeworks/week21/fe)
+這個對 React 生態系的影響很大，甚至改變了原本在寫 React 時的思考方式，是很大的變革，但滿多教材都是比較舊的內容，裡面會提到的東西叫做 class component。
+
+雖然說 class component 在很多 app 裡還是很常看到，但基本上新的 app 都是用 function component + hooks 在開發了，底下會把學習資源分成 function component + class component 兩塊，請先學習 function component，如果看不懂或有疑惑，再回去看 class component。
+
+#### function component 學習資源
+
+1. [FE302] React 基礎 - hooks 版本，看到「React 基礎」結束，應該就能寫出本週的作業了
+
+部署的部分可以參考 FE302 課程中的「部署 React App」，記得在交作業之前先部署好，助教才比較方便改作業。
+
+如果課程看不懂，可以額外參考：[從 Hooks 開始，讓你的網頁 React 起來](https://ithelp.ithome.com.tw/users/20103315/ironman/2668?page=1)
+
+#### class component 學習資源
+
+1. [FE301] React 基礎（Class component 版）：全部
+2. [官方教學](https://reactjs.org/tutorial/tutorial.html)
+3. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
+
+延伸閱讀：[React 性能優化大挑戰：一次理解 Immutable data 跟 shouldComponentUpdate](https://blog.techbridge.cc/2018/01/05/react-render-optimization/)
+
+[HW21 作業連結](/homeworks/week21)
 
 #### 自我檢測
 
@@ -273,27 +291,36 @@
 
 在上一週結束之後，大家應該對 React 有了一些基本的感覺，這一週我們要繼續培養對 React 的感覺，讓大家對 React 越來越熟練。
 
-除此之外也會教大家用 React Router 這一套 library，來實做前端的路由。
+除此之外也會教大家用 React Router 這一套 library，來實做前端的路由。然後也會在課程中帶大家做出一個半成品的 SPA 部落格，並交由各位把剩下的功能完成。
 
 指定教材：
 
-1. [FE301] React 基礎：全部
-2. 程式導師實驗計畫第二期：Week13-1 還是 React
-3. 程式導師實驗計畫第二期：Week13-2 依舊 React
+1. [FE302] React 基礎 - hooks 版本：全部
+2. [淺談新手在學習 SPA 時的常見問題：以 Router 為例](https://blog.huli.tw/2019/09/18/spa-common-problem-about-router/)
+3. [How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+4. [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
 
-[HW22 作業連結](/homeworks/week22/fe)
+[HW22 作業連結](/homeworks/week22)
 
-延伸閱讀：[前後端分離與 SPA](https://blog.techbridge.cc/2017/09/16/frontend-backend-mvc/)、[跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
+延伸閱讀：
+
+1. [前後端分離與 SPA](https://blog.techbridge.cc/2017/09/16/frontend-backend-mvc/)
+2. [跟著小明一起搞懂技術名詞：MVC、SPA 與 SSR](https://medium.com/@hulitw/introduction-mvc-spa-and-ssr-545c941669e9)
 
 #### 自我檢測
 
-- [ ] 我熟悉 React 的基本使用
-- [ ] 我知道如何使用 React Router 
-- [ ] 我了解 React Router 的目的
-- [ ] 我知道什麼是 Single Page Application
-- [ ] 我理解現在的前端與以往的差別
+- [ ] P1 我熟悉 React 的基本使用
+- [ ] P1 我知道如何使用 React Router 
+- [ ] P1 我了解 React Router 的目的
+- [ ] P1 我知道什麼是 Single Page Application
+- [ ] P1 我理解現在的前端與以往的差別
+- [ ] P1 我知道 class component 與 function component 的差異
+- [ ] P1 我知道 class component 的各個 lifecycle
+- [ ] P2 我知道每一個 hook 大概是在做什麼
 
 ### 第二十三週（11/16 ~ 11/22）：前端框架（三）
+
+（課程內容及作業尚未決定）
 
 在之前的 React 課程中，我們已經慢慢熟悉 React 的思考模式，可是還有一些問題還沒解決，雖然你現在感受不太到，但是在 App 慢慢變大之後就會碰到了。
 
@@ -304,7 +331,7 @@
 1. 程式導師實驗計畫第二期：Week14-1 Redux
 2. 程式導師實驗計畫：Lesson 13-1 之 React + Redux
 
-[HW23 作業連結](/homeworks/week23/fe)
+[HW23 作業連結](/homeworks/week23)
 
 #### 自我檢測
 
@@ -312,6 +339,8 @@
 - [ ] 我知道我們為什麼需要 Redux
 
 ### 第二十四週（11/23 ~ 11/29）：前端框架（四）
+
+（課程內容及作業尚未決定）
 
 最後一週裡面我們將用 redux 來解決非同步操作的問題，讓大家知道如何利用它與 redux-promise 來解決非同步的一些問題。
 
@@ -322,7 +351,7 @@
 3. 第二期 React 補充：什麼是 super 以及生命週期的運用
 4. 第二期 React 補充：再來談談什麼是 this
 
-[HW24 作業連結](/homeworks/week24/fe)
+[HW24 作業連結](/homeworks/week24)
 
 #### 自我檢測
 
