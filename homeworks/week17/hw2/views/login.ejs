@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <%- include('./head') %>
+  <body>
+  <div class="main">
+    <div class="main__card">
+      <div class="error__message"><%= errorMessage %></div>
+      <form method="post" action="/handle-login">
+        <label class="admin__label">Admin </label>
+        <input class="admin__input" name="admin">
+        <label class="password__label">Password: </label>
+        <input class="password__input" name="password" type="password">
+        <button type="submit" class="submit__login__btn">Login</button>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

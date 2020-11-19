@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<%- include('./partials/head') %>
+<html>
+  <%- include('./partials/header') %>
+  <div class="main">
+    <div class="main__card">    
+      <% let postTitle = "" %>
+      <% let postContent = "" %>
+      <% let postCategoryId = 0 %>
+      <div class="editor">
+        <% if (typeof post !== 'undefined' && post !== null) { %>
+        <% postTitle = post.title %>
+        <% postContent = post.content %>
+        <% postCategoryId = post.categoryId %>
+          <form class="editor__form" method="post" action="/handle-edit/<%= post.id %>">
+        <% } else { %>
+          <form class="editor__form" method="post" action="/handle-add">
+        <% } %>
+          <label class="editor__title-label">Title: </label>
+          <br> 
+          <input class="editor__title-input" name="title" value=<%= postTitle %> >
+          <br> 
+          <label class="editor__category-label">Category: </label>
+          <br> 
+          <select class="editor__category-input" name="categoryId">
+            <% for (const category of categories) { %>
+            <option value=<%= category.id %>
+              <%= postCategoryId === category.id ? "selected" : "" %>
+            >
+                <%= category.categoryName %>
+              </option>
+            <% } %>
+          </select>
+          <br> 
+          <textarea class="editor__content-textarea" name="content"><%= postContent %></textarea>
+          <br> 
+          <button type="submit" class="editor__submit-btn">POST</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <%- include('./partials/footer') %>
+</html>

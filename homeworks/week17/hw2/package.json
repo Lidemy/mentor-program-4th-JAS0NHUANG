@@ -1,0 +1,38 @@
+{
+  "name": "lucky-jas0n",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "db:migrate": "npx sequelize db:migrate",
+    "start": "npm run db:migrate && node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAS0NHUANG/lucky-jas0n.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAS0NHUANG/lucky-jas0n/issues"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "session": "^0.1.0"
+  },
+  "engines": {
+    "node": "15.0.1"
+  },
+  "homepage": "https://github.com/JAS0NHUANG/lucky-jas0n#readme",
+  "description": ""
+}

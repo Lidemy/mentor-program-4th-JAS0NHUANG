@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<%- include('./head') %>
+<body>
+  <div class="main">
+    <button class="get__lucky__btn">Get Lucky</button> 
+    <div class="prize__name">What will you get?</div>
+    <img class="prize__photo" src="https://i.imgur.com/et7cxmY.png" />
+    <br>
+    <% if (admin) { %>
+      <a href="/handle-logout" class="admin__login__btn">Logout</a> 
+      <a href="/admin" class="admin__login__btn">Admin</a> 
+    <% } else { %>
+      <a href="/login" class="admin__login__btn">Login</a> 
+    <% } %>
+  </div>
+  <script src="/javascript/main.js">
+  </script>
+</body>
+</html>

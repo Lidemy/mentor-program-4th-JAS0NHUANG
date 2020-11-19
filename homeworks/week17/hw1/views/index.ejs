@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<%- include('./partials/head') %>
+<html>
+  <%- include('./partials/header') %>
+  <div class="main">
+  <% if (errorMessage.length !== 0) { %>
+    <div class="error__message"><%= errorMessage %></div>
+  <% } %>
+  <% if (typeof posts !== 'undefined' && posts !== null) { %>
+    <% posts.reverse().forEach( function(post) { %>
+      <div class="main__card">
+        <div class="post__title">
+          <a href="/post/<%= post.id %>">
+            <%= post.title %>
+          </a>
+        </div>
+        <div class="post__info">
+          <% const createdAtStr = post.createdAt.toString() %>
+          <%= createdAtStr.split("GMT")[0] %> / <%= post.Category.categoryName %>
+        </div>
+        <div class="post__content">
+          <% const contentStr = post.content.toString() %>
+          <%= contentStr.split("<!--more-->")[0] %>
+          <br>
+          <% if (contentStr.split("<!--more-->").length > 1) { %>
+            <a href="/post/<%= post.id %>">Read More</a>
+          <% } %>
+        </div>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <div class="main__card">
+      <div class="post__title">
+        <%= post.title %>
+      </div>
+      <div class="post__info">
+        <% const createdAtStr = post.createdAt.toString() %>
+        <%= createdAtStr.split("GMT")[0] %> / <%= post.Category.categoryName %>
+      </div>
+      <div class="post__content">
+        <% const contentStr = post.content.toString() %>
+        <%= contentStr.split("<!--more-->")[0] %>
+        <%= contentStr.split("<!--more-->")[1] %>
+      </div>
+    </div>
+  <% } %>
+  </div>
+  <%- include('./partials/footer') %>
+</html>
