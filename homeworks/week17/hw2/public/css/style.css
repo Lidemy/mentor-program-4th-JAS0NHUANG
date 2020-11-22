@@ -1,0 +1,49 @@
+.main {
+  margin: auto;
+  width: 80%;
+  max-width: 1280px;
+  text-align: center;
+}
+
+img {
+  width: 90%;
+  max-width: 380px;
+  margin: 10px auto;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+button {
+  margin: 20px auto;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+a {
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  background-color: #e7e7e7;
+  border-radius: 5px;
+}
+
+.show {
+  transition: opacity 400ms;
+}
+
+.hide {
+  opacity: 0;
+}

@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  position: relative;
+  top:70px;
+  margin-top: 30px;
+  color: grey;
+  &_wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px 0;
+    background: white;
+    text-align: center;
+  }
+}

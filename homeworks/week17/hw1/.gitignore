@@ -1,0 +1,4 @@
+/config
+/node_modules
+/controllers/sequelizeOp
+.env

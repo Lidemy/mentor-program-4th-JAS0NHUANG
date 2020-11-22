@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<%- include('./partials/head') %>
+<html>
+  <%- include('./partials/header') %>
+  <div class="main">
+    <div class="main__card">
+      <table class="list__table">
+        <tbody>
+        <% posts.forEach( function(post) { %>
+          <tr>
+            <td>
+              <a href="/post/<%= post.id %>">
+                <%= post.title %>
+              </a>
+            </td>
+            <td>
+              <% const createdAtStr = post.createdAt.toString() %>
+              <%= createdAtStr.split("GMT")[0] %> / <%= post.Category.categoryName %>
+            </td>
+          </tr>
+        <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <%- include('./partials/footer') %>
+</html>

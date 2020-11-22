@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<%- include('./partials/head') %>
+<html>
+  <%- include('./partials/header') %>
+  <body>
+  <div class="main">
+    <div class="main__card">
+      <table class="list__table">
+        <% if(admin) { %>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <% } %>
+        <tbody>
+        <% categories.forEach( function(category) { %>
+          <form class="category__form" method="post" 
+            action="/handle-edit-category/<%= category.id %>">
+          <tr>
+            <% if(admin) { %>
+              <td><%= category.id %></td>
+            <% } %>
+            <td>
+              <a href="/category/<%= category.id %>">
+                <%= category.categoryName %>
+              </a>
+            </td>
+            <% if(admin) { %>
+              <td><a class="list__table__btn" href="">Edit</td>
+              <td><a class="list__table__btn" href="">Delete</td>
+            <% } %>
+          </tr>
+        <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <%- include('./partials/footer') %>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+  <%- include('./head') %>
+  <% if (admin) { %>
+  <% let prizeName = "" %>
+  <% let prizePhoto = "" %>
+  <% let prizeWeight = 0 %>
+  <div class="main">
+    <% if (typeof prize !== 'undefined' && prize !== null) { %>
+      <% prizeName = prize.name %>
+      <% prizePhoto = prize.photo %>
+      <% prizeWeight = prize.weight %>
+      <form class="add__prize" method="post" action="/handle-edit-prize/<%= prize.id %>">
+    <% } else { %>
+      <form class="add__prize" method="post" action="/handle-add-prize">
+    <% } %>
+      <label class="add-prize__name__label">Prize name: </label>
+      <input class="add-prize__name__input" name="name" value=<%= prizeName %>>
+      <label class="add-prize__photo__label">Photo link: </label>
+      <input class="add-prize__photo__input" name="photo" value=<%= prizePhoto %>>
+      <label class="add-prize__weight__label">Weight: </label>
+      <input class="add-prize__weight__input" name="weight" value=<%= prizeWeight %>>
+      <button type="submit" class="add-prize__submit">Add Prize</button>
+    </form>
+  </div>
+  <% } %>
+</html>

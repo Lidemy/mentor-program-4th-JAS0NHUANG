@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header_wrapper">
+    <div class="header_logo_main">
+      <a href="/">
+        <div class="header_logo"></div>
+      </a>
+      <nav class="header_main nav">
+        <ul>
+          <a href="/archive"><li>ARCHIVE</li></a>
+          <a href="/category"><li>CATEGORY</li></a>
+          <a href="/about"><li>ABOUT</li></a>
+        </ul>
+      </nav>
+    </div>
+    <nav class="header_admin nav">
+      <ul>
+        <% if (typeof admin !== 'undefined' && admin !== null) { %>
+          <a href="/admin"><li>ADMIN</li></a>
+          <a href="/editor"><li>NEW POST</li></a>
+          <a href="/logout"><li>LOG OUT</li></a>
+        <% } else { %>
+          <a href="/login"><li>LOG IN</li></a>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>
