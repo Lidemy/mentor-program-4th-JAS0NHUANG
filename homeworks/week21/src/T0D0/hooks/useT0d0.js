@@ -13,10 +13,8 @@ export default function useT0d0() {
     if (t0d0Data && t0d0Data !== '[]') {
       t0d0Data = JSON.parse(t0d0Data);
       id = t0d0Data[t0d0Data.length - 1].t0d0Id + 1;
-    } else {
-      t0d0Data = [];
     }
-    return t0d0Data;
+    return t0d0Data = [];
   });
 
   useEffect(() => {
