@@ -1,25 +1,21 @@
 # 作業
 
-## hw1：SPA 部落格最後加強版
+## hw1：SPA 部落格加強版
 
-這我們要把有 API call 的地方都改成用 redux-promise 來實作，除了這些以外呢，也希望你能新增一些功能：
+之前的作業我們有做了一個簡單的部落格，而這週的作業會繼續加強它的功能。
 
-1. 可以用 Markdown 格式來撰寫及顯示文章
+我們需要增加的功能有：
 
-API 格式：
+1. 刪除文章
+2. 編輯文章
 
-endpoint：https://qootest.com   
-使用說明：https://github.com/typicode/json-server
+除了增加這兩個功能以外，我們原本 user 的資料是存在 context，這週的作業要請你把 context 拔掉，改用 redux 來存這個資訊。所以資料的更新也必須透過 redux。
 
-```
-POST /posts {title, author, body} 新增 posts
-GET  /posts 取得所有 post
-GET  /posts/:id 取得某個 post
-DELETE /posts/:id 刪除 post
-PUT /posts/:id {title, author, body} 更新 post
-```
-
+除此之外，在發 API 的部分我們原本是在 component 裡面直接用 fetch，現在請你改用 redux-thunk 來完成，所以 API 的 loading 狀態以及 response 都會存在 store 裡面。
 
 ## hw2：簡答題
 
-1. Redux 如何解決非同步（例如說 call API 拿資料）的問題
+1. Redux middleware 是什麼？
+2. CSR 跟 SSR 差在哪邊？為什麼我們需要 SSR？
+3. React 提供了哪些原生的方法讓你實作 SSR？
+4. 承上，除了原生的方法，有哪些現成的框架或是工具提供了 SSR 的解決方案？至少寫出兩種
