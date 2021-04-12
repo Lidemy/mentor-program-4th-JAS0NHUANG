@@ -56,15 +56,16 @@ label.label__title {
 }
 
 .radio {
+  appearance: none;
   position: relative;
   left: 20px;
   top: 2px;
   opacity: 0;
   cursor: pointer;
   margin: 0;
-  height: 0;
-  width: 0;
-  z-index: 3;
+  height: 16px;
+  width: 16px;
+  z-index: 9;
   &__label {
     cursor: pointer;
     line-height: 3;
