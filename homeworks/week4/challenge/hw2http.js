@@ -34,6 +34,7 @@ switch (action) {
     break
   default:
     console.log('可用指令：list、read、delete、create、update。')
+    return
 }
 
 const options = {
