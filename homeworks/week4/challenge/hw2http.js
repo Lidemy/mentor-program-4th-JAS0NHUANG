@@ -1,8 +1,9 @@
 const http = require('http')
 
-const apiURL = 'lidemy-book-store.herokuapp.com'
+const API_ENDPOINT = 'lidemy-book-store.herokuapp.com'
 const action = process.argv[2]
-const requestData = process.argv[3]
+const argument1 = process.argv[3]
+const argument2 = process.argv[4]
 
 let reqMethod
 let reqPath
@@ -15,28 +16,28 @@ switch (action) {
     break
   case 'read':
     reqMethod = 'GET'
-    reqPath = `/books/${requestData}`
+    reqPath = `/books/${argument1}`
     break
   case 'create':
     reqMethod = 'POST'
     reqPath = '/books'
-    queryData = `name=${requestData}`
+    queryData = `name=${argument1}`
     break
   case 'delete':
     reqMethod = 'DELETE'
-    reqPath = `/books/${requestData}`
+    reqPath = `/books/${argument1}`
     break
   case 'update':
     reqMethod = 'PATCH'
-    reqPath = `/books/${requestData}`
-    queryData = `name=${process.argv[4]}`
+    reqPath = `/books/${argument1}`
+    queryData = `name=${argument2}`
     break
   default:
-    console.log('可用指令：list、read、delete、create 與 update')
+    console.log('可用指令：list、read、delete、create、update。')
 }
 
 const options = {
-  hostname: apiURL,
+  hostname: API_ENDPOINT,
   port: 80,
   path: reqPath,
   method: reqMethod,
@@ -46,17 +47,23 @@ const options = {
 }
 
 const req = http.request(options, res => {
-  if (res.statusCode >= 400) {
-    console.log('資料錯誤，請重新輸入')
+  if (res.statusCode >= 400 || req.path === '/') {
+    console.log('資料錯誤，請重新輸入。')
     return
   }
-  let data = ''
+  let chunksString = ''
+  // call when a data chunk is received. May have several chunks.
   res.on('data', chunk => {
-    if (req.path === '/') {
-      return
+    chunksString += chunk
+  })
+  res.on('end', () => {
+    let data
+    // process the chunks string here.
+    try {
+      data = JSON.parse(chunksString)
+    } catch (error) {
+      console.log(error, '資料解析失敗，請重試。')
     }
-    data = JSON.parse(chunk)
-
     switch (req.method) {
       case 'GET':
         if (data.length) {
@@ -80,7 +87,7 @@ const req = http.request(options, res => {
   })
 })
 
-req.on('error', e => {
+req.on('error', error => {
   console.log('請重新輸入')
 })
 
@@ -89,3 +96,5 @@ if (queryData !== undefined) {
 }
 
 req.end()
+
+// https://en.wikipedia.org/wiki/Chunked_transfer_encoding
