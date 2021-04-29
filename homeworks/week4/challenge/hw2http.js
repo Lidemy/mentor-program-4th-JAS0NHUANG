@@ -79,7 +79,7 @@ const req = http.request(options, res => {
         console.log(`新增書藉 ${data.name} id 為 ${data.id}`)
         break
       case 'DELETE':
-        console.log(`已刪除 id 為 ${requestData} 的書藉`)
+        if (res.statusCode === 200) console.log(`已刪除 id 為 ${argument1} 的書藉`)
         break
       case 'PATCH':
         console.log(`已將 id 為 ${data.id} 之書藉更名為 ${data.name}`)
