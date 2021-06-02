@@ -16,8 +16,8 @@ const oauthOptions = {
   form: {
     realm: 'partenaire',
     grant_type: 'client_credentials',
-    client_id: 'PAR_jibtest_7888d6c5583211b145efa656041088277cfc57ffbeafd104c9d7a1eae0855e88',
-    client_secret: '99c665af15639795b161c5103ece97566368d123df475f9173e84ccc3275ce97',
+    client_id: XX,
+    client_secret: XX,
     // 文件裡提到所有的 scope 都要加上，不然拿到的 Token 無效
     scope: 'application_PAR_jibtest_7888d6c5583211b145efa656041088277cfc57ffbeafd104c9d7a1eae0855e88 api_offresdemploiv2 o2dsoffre'
   }
